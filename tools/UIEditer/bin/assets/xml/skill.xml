@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:7a2e033176ab58e38a90bd4622e65a1c$ -->
+<TextureAtlas imagePath="skill.png">
+    <SubTexture name="2pts" x="212" y="380" width="68" height="61"/>
+    <SubTexture name="2pts_all" x="212" y="317" width="68" height="61"/>
+    <SubTexture name="3pts" x="212" y="254" width="68" height="61"/>
+    <SubTexture name="3pts_all" x="422" y="191" width="68" height="61"/>
+    <SubTexture name="AD_23" x="422" y="128" width="68" height="61"/>
+    <SubTexture name="AI_9" x="352" y="128" width="68" height="61"/>
+    <SubTexture name="AJ_25" x="282" y="128" width="68" height="61"/>
+    <SubTexture name="BG_32" x="212" y="128" width="68" height="61"/>
+    <SubTexture name="CA_7" x="142" y="128" width="68" height="61"/>
+    <SubTexture name="CB_1" x="72" y="443" width="68" height="61"/>
+    <SubTexture name="CP_3" x="72" y="380" width="68" height="61"/>
+    <SubTexture name="DH_12" x="72" y="317" width="68" height="61"/>
+    <SubTexture name="DN_41" x="72" y="254" width="68" height="61"/>
+    <SubTexture name="DR_1" x="72" y="191" width="68" height="61"/>
+    <SubTexture name="DW_3" x="72" y="128" width="68" height="61"/>
+    <SubTexture name="JH_11" x="422" y="65" width="68" height="61"/>
+    <SubTexture name="JH_13" x="352" y="65" width="68" height="61"/>
+    <SubTexture name="JN_13" x="282" y="65" width="68" height="61"/>
+    <SubTexture name="JS_6" x="212" y="65" width="68" height="61"/>
+    <SubTexture name="JW_2" x="142" y="65" width="68" height="61"/>
+    <SubTexture name="KB_24" x="72" y="65" width="68" height="61"/>
+    <SubTexture name="KD_35" x="2" y="443" width="68" height="61"/>
+    <SubTexture name="KI_2" x="2" y="380" width="68" height="61"/>
+    <SubTexture name="KL_42" x="2" y="317" width="68" height="61"/>
+    <SubTexture name="LA_12" x="2" y="254" width="68" height="61"/>
+    <SubTexture name="LJ_6" x="2" y="191" width="68" height="61"/>
+    <SubTexture name="MG_20" x="2" y="128" width="68" height="61"/>
+    <SubTexture name="PG_16" x="2" y="65" width="68" height="61"/>
+    <SubTexture name="PG_24" x="422" y="2" width="68" height="61"/>
+    <SubTexture name="RR_9" x="352" y="2" width="68" height="61"/>
+    <SubTexture name="RW_0" x="282" y="2" width="68" height="61"/>
+    <SubTexture name="SC_30" x="212" y="2" width="68" height="61"/>
+    <SubTexture name="SI_9" x="142" y="2" width="68" height="61"/>
+    <SubTexture name="TD_21" x="72" y="2" width="68" height="61"/>
+    <SubTexture name="TP_9" x="2" y="2" width="68" height="61"/>
+    <SubTexture name="assist" x="352" y="191" width="68" height="61"/>
+    <SubTexture name="assist_all" x="282" y="191" width="68" height="61"/>
+    <SubTexture name="block" x="212" y="191" width="68" height="61"/>
+    <SubTexture name="block_all" x="142" y="443" width="68" height="61"/>
+    <SubTexture name="rebound" x="142" y="380" width="68" height="61"/>
+    <SubTexture name="rebound_all" x="142" y="317" width="68" height="61"/>
+    <SubTexture name="steal" x="142" y="254" width="68" height="61"/>
+    <SubTexture name="steal_all" x="142" y="191" width="68" height="61"/>
+</TextureAtlas>

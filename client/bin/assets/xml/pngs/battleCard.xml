@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:8ccd18bcc4072bcc9117b865b5236049$ -->
+<TextureAtlas imagePath="battleCard.png">
+    <SubTexture name="battle_image_400001" x="250" y="722" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400002" x="126" y="842" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400003" x="126" y="722" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400004" x="374" y="602" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400005" x="250" y="602" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400006" x="126" y="602" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400007" x="2" y="842" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400008" x="2" y="722" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400009" x="2" y="602" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400010" x="374" y="482" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400011" x="250" y="482" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400012" x="126" y="482" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400013" x="2" y="482" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400014" x="374" y="362" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400015" x="374" y="482" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400016" x="250" y="362" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400017" x="374" y="602" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400018" x="126" y="362" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400019" x="2" y="362" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400020" x="2" y="362" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400021" x="374" y="242" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400022" x="250" y="242" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400023" x="126" y="242" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400024" x="2" y="242" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400025" x="374" y="122" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400026" x="250" y="122" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400027" x="126" y="122" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400028" x="2" y="122" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400029" x="250" y="242" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400030" x="374" y="2" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400031" x="250" y="2" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400032" x="126" y="2" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="battle_image_400033" x="2" y="2" width="122" height="118" frameX="-6" frameY="-2" frameWidth="140" frameHeight="120"/>
+    <SubTexture name="skill_sub_type_1" x="442" y="794" width="66" height="64" frameX="-7" frameY="-6" frameWidth="80" frameHeight="72"/>
+    <SubTexture name="skill_sub_type_2" x="374" y="722" width="76" height="70" frameX="-3" frameY="-2" frameWidth="80" frameHeight="72"/>
+    <SubTexture name="skill_sub_type_3" x="374" y="794" width="66" height="66" frameX="-8" frameY="-5" frameWidth="80" frameHeight="72"/>
+    <SubTexture name="skill_sub_type_4" x="442" y="860" width="62" height="62" frameX="-9" frameY="-6" frameWidth="80" frameHeight="72"/>
+</TextureAtlas>

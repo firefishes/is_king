@@ -1,0 +1,126 @@
+package game.command 
+{
+	import game.data.BattleData;
+	import game.data.CampData;
+	import game.model.BattleCardModel;
+	import game.notice.BattleCardDataNotice;
+	import game.notice.GetBattleCardsNotice;
+	import game.utils.BattleOwner;
+	import game.utils.GetBattleGeneralType;
+	import game.model.BattleModel;
+	import game.model.PositionsModel;
+	import game.model.StageModel;
+	import game.notice.BattleDataSubjectNotice;
+	import game.notice.BattleGeneralPositionsNotice;
+	import game.notice.BattlePropertyFillNotice;
+	import game.notice.GetBattleGeneralNotice;
+	import game.notice.InitBattleNotice;
+	import shipDock.framework.core.command.Command;
+	import shipDock.framework.core.interfaces.INotice;
+	import shipDock.framework.core.observer.DataProxy;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleDataCommand extends Command 
+	{
+		
+		public static const INIT_BATTLE_COMMAND:String = "initBattleCommand";
+		public static const START_BATTLE_COMMAND:String = "startBattleCommand";
+		public static const GET_CURRENT_GENERAL_LIST_COMMAND:String = "getCurrentGeneralListCommand";
+		public static const GET_BATTLE_DATA_COMMAND:String = "getBattleDataCommand";
+		public static const UPDATE_BATTLE_DATA_ON_FRAME_COMMAND:String = "updateBattleDataOnFrameCommand";
+		public static const BATTLE_PROPERTY_FILL_MAX_COMMAND:String = "battlePropertyFillMaxCommand";
+		
+		public static const GET_BATTLE_GENERAL_COMMAND:String = "getBattleGeneralCommand";
+		
+		public static const ADD_BATTLE_CARD_COMMAND:String = "addBattleCardCommand";
+		public static const GET_BATTLE_CARDS_COMMAND:String = "getBattleCardsCommand";
+		public static const GET_BATTLE_CARDS_COUNT_COMMAND:String = "getBattleCardsCountCommand";
+		
+		private var _battleData:BattleData;
+		
+		public function BattleDataCommand() 
+		{
+			super();
+		}
+		
+		override public function dispose():void 
+		{
+			super.dispose();
+			this._battleData = null;
+		}
+		
+		public function initBattleCommand(notice:InitBattleNotice):void {
+			this.battleData.battleModel.stageModel = new StageModel(notice.battleID);
+			this.battleData.battleModel.isPVE = notice.isPVE;
+			if (notice.isPVE) {//关卡推图
+				var campData:CampData = DataProxy.getDataProxy(CampData.CAMP_DATA);
+				var user:Array = campData.atkCamp;
+				this.battleData.initGenerals(user);
+			}else {//TODO 人与人斗，其乐无穷
+				
+			}
+		}
+		
+		public function startBattleCommand(notice:INotice):void {
+			this.battleData.startBattleData();
+		}
+		
+		public function getBattleDataCommand(notice:INotice):BattleData {
+			return this.battleData;
+		}
+		
+		public function getGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel {
+			var key:String = BattleOwner.OWNER_KEYS[notice.ownerType];
+			return this.battleData[key + "GeneralList"];
+		}
+		
+		public function getCurrentGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel {
+			var key:String = BattleOwner.OWNER_KEYS[notice.ownerType];
+			return this.battleData[key + "CurrentGeneral"];
+		}
+		
+		public function updateBattleDataOnFrameCommand(notice:INotice):void {
+			this.battleData.updateDataOnFrame(notice.data);
+		}
+		
+		public function battlePropertyFillMaxCommand(notice:BattlePropertyFillNotice):void {
+			if (notice.isIntelligence && notice.isFillMax) {
+				this.battleData.intelligenceFillMax(notice.ownerType);
+			}
+		}
+		
+		public function getBattleGeneralCommand(notice:GetBattleGeneralNotice):PositionsModel {
+			var key:String = BattleOwner.OWNER_KEYS[notice.owner];
+			if (notice.getType == GetBattleGeneralType.ALL) {
+				key = key + "GeneralList";
+			}else if(notice.getType == GetBattleGeneralType.CURRENT) {
+				key = key + "CurrentGeneral";
+			}//TODO 获取阵亡将领列表
+			var result:PositionsModel = this.battleData[key];
+			return result;
+		}
+		
+		public function addBattleCardCommand(notice:BattleCardDataNotice):void {
+			this.battleData.addBattleCard(notice);
+		}
+		
+		public function getBattleCardsCommand(notice:GetBattleCardsNotice):BattleCardModel {
+			return this.battleData.getBattleCardByIndex(notice);
+		}
+		
+		public function getBattleCardsCountCommand(notice:BattleCardDataNotice):uint {
+			return this.battleData.getBattleCardCount(notice);
+		}
+		
+		private function get battleData():BattleData {
+			if (this._battleData == null) {
+				this._battleData = DataProxy.getDataProxy(BattleData.BATTLE_DATA);
+			}
+			return this._battleData;
+		}
+	}
+
+}

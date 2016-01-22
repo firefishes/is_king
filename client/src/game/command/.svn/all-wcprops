@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/is_king/!svn/ver/272/client/src/game/command
+END
+BattleOptionPannelCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/is_king/!svn/ver/259/client/src/game/command/BattleOptionPannelCommand.as
+END
+BattleDataCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/is_king/!svn/ver/262/client/src/game/command/BattleDataCommand.as
+END
+BattleAICommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/259/client/src/game/command/BattleAICommand.as
+END
+BattleViewCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/is_king/!svn/ver/272/client/src/game/command/BattleViewCommand.as
+END
+IsKingStartUpCommand.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/is_king/!svn/ver/278/client/src/game/command/IsKingStartUpCommand.as
+END

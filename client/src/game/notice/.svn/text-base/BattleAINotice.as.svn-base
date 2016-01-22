@@ -1,0 +1,24 @@
+package game.notice 
+{
+	import shipDock.framework.core.notice.Notice;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleAINotice extends Notice 
+	{
+		
+		public static const RUN_AI_NOTICE:String = "runAINotice";
+		public static const BATTLE_AI_CREATE_BATTLE_CARD_NOTICE:String = "battleAIcreateBattleCardNotice";
+		
+		public function BattleAINotice(subCommand:String, data:*=null) 
+		{
+			this.subCommand = subCommand;
+			super(NoticeName.BATTLE_AI, data);
+			
+		}
+		
+	}
+
+}

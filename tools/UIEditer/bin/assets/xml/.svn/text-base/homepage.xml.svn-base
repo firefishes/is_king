@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:9f188c4bdf8139e3456ede0ea8ea8851$ -->
+<TextureAtlas imagePath="homepage.png">
+    <SubTexture name="addIcon" x="964" y="167" width="36" height="34" frameX="-3" frameY="0" frameWidth="40" frameHeight="34"/>
+    <SubTexture name="background" x="2" y="644" width="701" height="335" frameX="0" frameY="0" frameWidth="701" frameHeight="339"/>
+    <SubTexture name="btn0_indexExtension" x="914" y="954" width="63" height="71" frameX="0" frameY="0" frameWidth="63" frameHeight="73"/>
+    <SubTexture name="btn1_indexExtension" x="849" y="954" width="63" height="71" frameX="0" frameY="0" frameWidth="63" frameHeight="73"/>
+    <SubTexture name="diamondIcon" x="964" y="203" width="34" height="30"/>
+    <SubTexture name="expBar" x="705" y="804" width="175" height="8" frameX="-2" frameY="0" frameWidth="181" frameHeight="8"/>
+    <SubTexture name="expBarBg" x="705" y="793" width="177" height="9" frameX="-1" frameY="-1" frameWidth="181" frameHeight="11"/>
+    <SubTexture name="extensionBg" x="705" y="976" width="59" height="495"/>
+    <SubTexture name="headBg" x="705" y="644" width="301" height="105"/>
+    <SubTexture name="indexBg" x="2" y="2" width="960" height="640"/>
+    <SubTexture name="lightEff" x="964" y="96" width="40" height="33" frameX="0" frameY="-3" frameWidth="40" frameHeight="37"/>
+    <SubTexture name="logo" x="964" y="2" width="54" height="56" frameX="-6" frameY="-2" frameWidth="68" frameHeight="66"/>
+    <SubTexture name="moneyBg" x="705" y="751" width="182" height="40" frameX="0" frameY="-3" frameWidth="182" frameHeight="48"/>
+    <SubTexture name="moneyIcon" x="964" y="60" width="48" height="34"/>
+    <SubTexture name="player" x="889" y="778" width="74" height="66" frameX="-6" frameY="-14" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="postcbg" x="705" y="922" width="142" height="52"/>
+    <SubTexture name="postpfbg" x="849" y="900" width="142" height="52"/>
+    <SubTexture name="postpgbg" x="705" y="868" width="142" height="52"/>
+    <SubTexture name="postsfbg" x="849" y="846" width="142" height="52"/>
+    <SubTexture name="postsgbg" x="705" y="814" width="142" height="52"/>
+    <SubTexture name="powerIcon" x="964" y="235" width="27" height="31"/>
+    <SubTexture name="scaleIcon" x="964" y="131" width="37" height="34"/>
+    <SubTexture name="star" x="1006" y="96" width="16" height="16"/>
+    <SubTexture name="vip_01" x="889" y="751" width="98" height="25" frameX="0" frameY="-2" frameWidth="102" frameHeight="27"/>
+</TextureAtlas>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:19488c8f52df22dc98c1a2183efc9439$ -->
+<TextureAtlas imagePath="buttons.png">
+    <SubTexture name="btn0_arrowLeft" x="464" y="61" width="42" height="57"/>
+    <SubTexture name="btn0_arrowRight" x="464" y="2" width="42" height="57"/>
+    <SubTexture name="btn0_back" x="253" y="289" width="72" height="48"/>
+    <SubTexture name="btn0_close" x="302" y="462" width="59" height="40"/>
+    <SubTexture name="btn0_confirm" x="233" y="2" width="229" height="79"/>
+    <SubTexture name="btn0_indexArena" x="95" y="202" width="91" height="99" frameX="0" frameY="-22" frameWidth="91" frameHeight="143"/>
+    <SubTexture name="btn0_indexDraft" x="93" y="303" width="89" height="101" frameX="0" frameY="-21" frameWidth="89" frameHeight="143"/>
+    <SubTexture name="btn0_indexExActivity" x="426" y="289" width="55" height="63" frameX="-8" frameY="0" frameWidth="63" frameHeight="63"/>
+    <SubTexture name="btn0_indexExBackpack" x="363" y="408" width="59" height="66" frameX="-4" frameY="0" frameWidth="63" frameHeight="66"/>
+    <SubTexture name="btn0_indexExMail" x="180" y="406" width="59" height="71" frameX="-4" frameY="0" frameWidth="63" frameHeight="71"/>
+    <SubTexture name="btn0_indexExMission" x="306" y="339" width="59" height="67" frameX="-4" frameY="0" frameWidth="63" frameHeight="67"/>
+    <SubTexture name="btn0_indexExTactical" x="424" y="359" width="57" height="68" frameX="-6" frameY="0" frameWidth="63" frameHeight="68"/>
+    <SubTexture name="btn0_indexMail" x="367" y="83" width="91" height="101" frameX="0" frameY="-20" frameWidth="91" frameHeight="143"/>
+    <SubTexture name="btn0_indexMonopoly" x="366" y="186" width="90" height="101" frameX="0" frameY="-20" frameWidth="90" frameHeight="143"/>
+    <SubTexture name="btn0_indexMore" x="91" y="406" width="87" height="101" frameX="0" frameY="-20" frameWidth="87" frameHeight="143"/>
+    <SubTexture name="btn0_indexSchedule" x="138" y="83" width="134" height="117" frameX="-10" frameY="-4" frameWidth="152" frameHeight="143"/>
+    <SubTexture name="btn1_back" x="184" y="344" width="72" height="48"/>
+    <SubTexture name="btn1_close" x="241" y="462" width="59" height="40"/>
+    <SubTexture name="btn1_confirm" x="2" y="2" width="229" height="79"/>
+    <SubTexture name="btn1_indexArena" x="2" y="202" width="91" height="99" frameX="0" frameY="-22" frameWidth="91" frameHeight="143"/>
+    <SubTexture name="btn1_indexDraft" x="2" y="303" width="89" height="101" frameX="0" frameY="-21" frameWidth="89" frameHeight="143"/>
+    <SubTexture name="btn1_indexExActivity" x="424" y="429" width="53" height="63" frameX="-7" frameY="0" frameWidth="63" frameHeight="63"/>
+    <SubTexture name="btn1_indexExBackpack" x="241" y="394" width="63" height="66"/>
+    <SubTexture name="btn1_indexExMail" x="188" y="202" width="63" height="71"/>
+    <SubTexture name="btn1_indexExMission" x="188" y="275" width="63" height="67"/>
+    <SubTexture name="btn1_indexExTactical" x="367" y="289" width="57" height="68" frameX="-3" frameY="0" frameWidth="63" frameHeight="68"/>
+    <SubTexture name="btn1_indexMail" x="274" y="83" width="91" height="101" frameX="0" frameY="-20" frameWidth="91" frameHeight="143"/>
+    <SubTexture name="btn1_indexMonopoly" x="274" y="186" width="90" height="101" frameX="0" frameY="-20" frameWidth="90" frameHeight="143"/>
+    <SubTexture name="btn1_indexMore" x="2" y="406" width="87" height="101" frameX="0" frameY="-20" frameWidth="87" frameHeight="143"/>
+    <SubTexture name="btn1_indexSchedule" x="2" y="83" width="134" height="117" frameX="-10" frameY="-4" frameWidth="152" frameHeight="143"/>
+</TextureAtlas>

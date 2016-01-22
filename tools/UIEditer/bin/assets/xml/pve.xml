@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:26b68fc068e7264ef5d5512b15a337b4$ -->
+<TextureAtlas imagePath="pve.png">
+    <SubTexture name="btn0_matchinfoRecom" x="1926" y="387" width="73" height="25"/>
+    <SubTexture name="btn0_matchinfoStart" x="991" y="1304" width="229" height="75"/>
+    <SubTexture name="btn0_matchinfoSweep" x="593" y="1212" width="185" height="55" frameX="-1" frameY="0" frameWidth="187" frameHeight="55"/>
+    <SubTexture name="btn0_matchinfoSweep10" x="406" y="1168" width="185" height="55"/>
+    <SubTexture name="btn0_playoff1" x="2" y="1328" width="195" height="84"/>
+    <SubTexture name="btn0_playoff2" x="1813" y="1490" width="195" height="84"/>
+    <SubTexture name="btn0_playoff3" x="1616" y="1490" width="195" height="84"/>
+    <SubTexture name="btn0_playoff4" x="1419" y="1407" width="195" height="84"/>
+    <SubTexture name="btn0_season13" x="199" y="1178" width="205" height="68"/>
+    <SubTexture name="btn0_season14" x="936" y="1381" width="204" height="68"/>
+    <SubTexture name="btn0_season15" x="730" y="1328" width="204" height="68"/>
+    <SubTexture name="btn0_seasonback" x="1926" y="234" width="72" height="48"/>
+    <SubTexture name="btn1_matchinfoRecom" x="1926" y="360" width="73" height="25"/>
+    <SubTexture name="btn1_matchinfoStart" x="991" y="1227" width="229" height="75"/>
+    <SubTexture name="btn1_matchinfoSweep" x="602" y="1155" width="185" height="55" frameX="-1" frameY="0" frameWidth="187" frameHeight="55"/>
+    <SubTexture name="btn1_matchinfoSweep10" x="602" y="1098" width="185" height="55"/>
+    <SubTexture name="btn1_playoff1" x="1731" y="1404" width="195" height="84"/>
+    <SubTexture name="btn1_playoff2" x="1731" y="1318" width="195" height="84"/>
+    <SubTexture name="btn1_playoff3" x="1222" y="1347" width="195" height="84"/>
+    <SubTexture name="btn1_playoff4" x="1222" y="1261" width="195" height="84"/>
+    <SubTexture name="btn1_season13" x="2" y="1258" width="205" height="68"/>
+    <SubTexture name="btn1_season14" x="524" y="1317" width="204" height="68"/>
+    <SubTexture name="btn1_season15" x="396" y="1098" width="204" height="68"/>
+    <SubTexture name="btn1_seasonback" x="1926" y="184" width="72" height="48"/>
+    <SubTexture name="btn2_matchinfoSweep" x="209" y="1248" width="187" height="53" frameX="0" frameY="-2" frameWidth="187" frameHeight="55"/>
+    <SubTexture name="btn2_matchinfoSweep10" x="406" y="1225" width="185" height="53" frameX="0" frameY="-2" frameWidth="185" frameHeight="55"/>
+    <SubTexture name="btn2_playoff2" x="199" y="1098" width="195" height="78" frameX="0" frameY="0" frameWidth="195" frameHeight="84"/>
+    <SubTexture name="btn2_playoff3" x="2" y="1178" width="195" height="78" frameX="0" frameY="0" frameWidth="195" frameHeight="84"/>
+    <SubTexture name="btn2_playoff4" x="2" y="1098" width="195" height="78" frameX="0" frameY="0" frameWidth="195" frameHeight="84"/>
+    <SubTexture name="mapBg" x="796" y="644" width="667" height="445"/>
+    <SubTexture name="match1" x="199" y="1356" width="124" height="51"/>
+    <SubTexture name="match2" x="335" y="1333" width="124" height="51"/>
+    <SubTexture name="match3" x="209" y="1303" width="124" height="51"/>
+    <SubTexture name="match4" x="398" y="1280" width="124" height="51"/>
+    <SubTexture name="match5" x="1302" y="1208" width="124" height="51"/>
+    <SubTexture name="matchinfoAtt" x="1988" y="150" width="29" height="32"/>
+    <SubTexture name="matchinfoBg" x="2" y="644" width="792" height="452"/>
+    <SubTexture name="matchinfoDef" x="1988" y="116" width="29" height="32"/>
+    <SubTexture name="matchinfoDown" x="2020" y="108" width="20" height="27"/>
+    <SubTexture name="matchinfoDrop" x="1302" y="1150" width="134" height="56"/>
+    <SubTexture name="matchinfoEneTac" x="1438" y="1174" width="309" height="134"/>
+    <SubTexture name="matchinfoEnegry" x="1926" y="333" width="95" height="25"/>
+    <SubTexture name="matchinfoEnemy" x="1302" y="1091" width="134" height="57"/>
+    <SubTexture name="matchinfoMyTac" x="991" y="1091" width="309" height="134"/>
+    <SubTexture name="matchinfoTeamName" x="1419" y="1310" width="310" height="95"/>
+    <SubTexture name="matchinfoTili" x="1989" y="79" width="29" height="35"/>
+    <SubTexture name="matchinfoUp" x="2020" y="79" width="21" height="27"/>
+    <SubTexture name="playoffBtnBg" x="1465" y="644" width="332" height="528"/>
+    <SubTexture name="regularBg" x="964" y="2" width="960" height="640"/>
+    <SubTexture name="seasonBg" x="2" y="2" width="960" height="640"/>
+    <SubTexture name="seasonLeft" x="1926" y="82" width="60" height="78"/>
+    <SubTexture name="seasonMapBg" x="1799" y="984" width="201" height="332"/>
+    <SubTexture name="seasonMapLight" x="1799" y="644" width="207" height="338"/>
+    <SubTexture name="seasonMapPlayer" x="796" y="1091" width="193" height="235"/>
+    <SubTexture name="seasonMonth" x="593" y="1269" width="146" height="46"/>
+    <SubTexture name="seasonNew" x="1926" y="284" width="61" height="47"/>
+    <SubTexture name="seasonPoint1" x="2031" y="13" width="9" height="9"/>
+    <SubTexture name="seasonPoint2" x="2031" y="2" width="9" height="9"/>
+    <SubTexture name="seasonRight" x="1926" y="2" width="61" height="78"/>
+    <SubTexture name="star1" x="1989" y="2" width="40" height="38"/>
+    <SubTexture name="star2" x="1989" y="42" width="37" height="35"/>
+</TextureAtlas>

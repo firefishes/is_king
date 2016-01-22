@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/is_king/!svn/ver/278/client/src/game/loader
+END
+GameFileSyncer.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/276/client/src/game/loader/GameFileSyncer.as
+END
+GameVersion.as
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/is_king/!svn/ver/260/client/src/game/loader/GameVersion.as
+END
+GameChooseServer.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/259/client/src/game/loader/GameChooseServer.as
+END
+GameInitLoader.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/259/client/src/game/loader/GameInitLoader.as
+END
+GamePlatformLoader.as
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/is_king/!svn/ver/261/client/src/game/loader/GamePlatformLoader.as
+END

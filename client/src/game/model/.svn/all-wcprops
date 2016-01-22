@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/is_king/!svn/ver/269/client/src/game/model
+END
+GeneralModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/is_king/!svn/ver/260/client/src/game/model/GeneralModel.as
+END
+SkillModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/260/client/src/game/model/SkillModel.as
+END
+StageModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/121/client/src/game/model/StageModel.as
+END
+TroopModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/121/client/src/game/model/TroopModel.as
+END
+PropertyModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/is_king/!svn/ver/170/client/src/game/model/PropertyModel.as
+END
+ConfigName.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/121/client/src/game/model/ConfigName.as
+END
+BattleCardModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/190/client/src/game/model/BattleCardModel.as
+END
+PositionsModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/is_king/!svn/ver/166/client/src/game/model/PositionsModel.as
+END
+TroopPropertyModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/269/client/src/game/model/TroopPropertyModel.as
+END
+GameProfile.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/261/client/src/game/model/GameProfile.as
+END
+GameModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/259/client/src/game/model/GameModel.as
+END
+BattleDataProperty.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/269/client/src/game/model/BattleDataProperty.as
+END
+BattleDataPropertyModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/is_king/!svn/ver/266/client/src/game/model/BattleDataPropertyModel.as
+END
+BattleModel.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/266/client/src/game/model/BattleModel.as
+END

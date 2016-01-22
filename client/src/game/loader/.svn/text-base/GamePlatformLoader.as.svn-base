@@ -1,0 +1,86 @@
+package game.loader
+{
+	import game.GameSetting;
+	import game.model.GameProfile;
+	import game.net.GameHTTPToken;
+	import game.notice.PlatFormLoaderNotice;
+	import game.utils.ResourceListType;
+	import shipDock.data.IProfileProxy;
+	import shipDock.data.ProfileProxy;
+	import shipDock.framework.application.SDConfig;
+	import shipDock.framework.application.SDCore;
+	import shipDock.framework.application.utils.NativeCallProxy;
+	import shipDock.framework.core.manager.NoticeManager;
+	import shipDock.framework.core.observer.DataProxy;
+	import shipDock.loader.PlatformLoader;
+	import starling.events.Event;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class GamePlatformLoader extends PlatformLoader
+	{
+		
+		public function GamePlatformLoader(url:String, complete:Function = null, progress:Function = null)
+		{
+			super(url, complete, progress);
+		
+		}
+		
+		override protected function loadCompleted(event:* = null):void
+		{
+			super.loadCompleted(event);
+			
+			var isApplyLaya:Boolean = SDConfig.isApplyLaya;
+			
+			var isMobile:Boolean = (isApplyLaya) ? false : NativeCallProxy.available;
+			var deviceInfo:Object = SDCore.getInstance().getDeviceInfo(isMobile); //获取设备信息
+			var userProfile:IProfileProxy = DataProxy.getDataProxy(ProfileProxy.PROXY_NAME);
+			
+			userProfile.setUserToken(GameSetting.TOKEN); //平台token（IOS or AND）
+			userProfile.setPlatform(GameSetting.PLATFORM); //应用平台
+			userProfile.setDeviceType(deviceInfo["deviceModel"] + "_" + deviceInfo["OSVersion"]); //设备类型
+			var deviceID:String = (isMobile && !isApplyLaya) ? NativeCallProxy.getDeviceID() : ("PC" + GameSetting.USER_TOKEN);
+			userProfile.setDeviceID(deviceID); //设备id
+			var appVersion:String = (isMobile && !isApplyLaya) ? NativeCallProxy.SDGetBundleVersion() : GameSetting.APP_VERSION;
+			userProfile.setAppVersion(appVersion); //应用版本
+			
+			if (int(this.loadedData["platform"]) == 0)
+			{ //PC上运行
+				userProfile.setUserSign(GameSetting.USER_SIGN);
+				userProfile.setUserToken(GameSetting.USER_TOKEN);
+				
+			}
+			else
+			{ //默认方式运行
+				userProfile.setUserToken(userProfile.getDeviceID());
+				userProfile.setUserSign(userProfile.getDeviceID());
+			}
+			
+			GameSetting.debug = this.loadedData["debug"];
+			GameSetting.resourceListType = this.loadedData["resourceListType"];
+			GameSetting.applyAssetServer = (int(this.loadedData["applyAssetServer"]) > 0);
+			
+			var locale:String = this._loadedData["locale"];
+			var fileAssetPath:String = GameSetting.FILE_ASSET + GameSetting.FILE_CONFIG;
+			var configAssetPath:String = GameSetting.FILE_ASSET + GameSetting.FILE_LOCALE;
+			
+			this.setPlatformConfig(GameSetting.host, GameSetting.asset, GameSetting.FILE_ASSET, fileAssetPath, configAssetPath, locale, null, GameSetting.GAME_OS_NAME);
+			
+			if (GameSetting.debug)
+			{
+				SDCore.getInstance().starling.showStatsAt("left", "top", 2);
+			}
+			
+			NoticeManager.sendNotice(new PlatFormLoaderNotice(this.platFormAccessSuccess));
+		}
+		
+		private function platFormAccessSuccess(result:Object):void
+		{
+			this.queueNext();
+			this.dispose();
+		}
+	}
+
+}

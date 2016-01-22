@@ -1,0 +1,28 @@
+package game.notice 
+{
+	import shipDock.framework.core.notice.Notice;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleOptionPannelNotice extends Notice 
+	{
+		
+		public static const RESTART_INELLINGENCE_BAR_NOTICE:String = "restartInellingenceBarNotice";
+		public static const BATTLE_OP_PANNEL_COMMIT_STATIC_TEXTS_NOTICE:String = "battleOpPannelCommitStaticTextsNotice";
+		public static const GET_BATTLE_CARD_TARGET_POS_NOTICE:String = "getBattleCardTargetPosNotice";
+		
+		public static const PAUSE_INELLINGENCE_BAR_NOTICE:String = "pauseInellingenceBarNotice";
+		public static const CONTINUE_INELLINGENCE_BAR_NOTICE:String = "continueInellingenceBarNotice";
+		
+		public function BattleOptionPannelNotice(subCommand:String, data:*=null) 
+		{
+			this.subCommand = subCommand;
+			super(NoticeName.BATTLE_OPTION_PANNEL, data);
+			
+		}
+		
+	}
+
+}

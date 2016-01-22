@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:d25b49e344ccb1a7d36c22b7544896a4$ -->
+<TextureAtlas imagePath="stadium0.png">
+    <SubTexture name="stadium0" x="2" y="2" width="1921" height="612"/>
+</TextureAtlas>

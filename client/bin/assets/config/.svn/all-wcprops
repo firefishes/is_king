@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/is_king/!svn/ver/184/client/bin/assets/config
+END
+resource.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/is_king/!svn/ver/184/client/bin/assets/config/resource.json
+END
+general_skill_relation.json
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/is_king/!svn/ver/155/client/bin/assets/config/general_skill_relation.json
+END
+skill_effect.json
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/155/client/bin/assets/config/skill_effect.json
+END
+skill_relation.json
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/is_king/!svn/ver/155/client/bin/assets/config/skill_relation.json
+END
+general.json
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/is_king/!svn/ver/111/client/bin/assets/config/general.json
+END
+skill.json
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/162/client/bin/assets/config/skill.json
+END
+skill_trigger.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/155/client/bin/assets/config/skill_trigger.json
+END
+troop.json
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/98/client/bin/assets/config/troop.json
+END
+skill_target.json
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/155/client/bin/assets/config/skill_target.json
+END

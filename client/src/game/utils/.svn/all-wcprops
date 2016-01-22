@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/is_king/!svn/ver/185/client/src/game/utils
+END
+SkillType.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/170/client/src/game/utils/SkillType.as
+END
+BattlePropertyName.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/166/client/src/game/utils/BattlePropertyName.as
+END
+CampType.as
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/is_king/!svn/ver/166/client/src/game/utils/CampType.as
+END
+CampStatus.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/is_king/!svn/ver/166/client/src/game/utils/CampStatus.as
+END
+ResourceListType.as
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/is_king/!svn/ver/166/client/src/game/utils/ResourceListType.as
+END
+BattleDataUtils.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/166/client/src/game/utils/BattleDataUtils.as
+END
+BattleOwner.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/166/client/src/game/utils/BattleOwner.as
+END
+PropertiesSetting.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/166/client/src/game/utils/PropertiesSetting.as
+END
+SkillSubType.as
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/is_king/!svn/ver/170/client/src/game/utils/SkillSubType.as
+END
+QualityType.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/170/client/src/game/utils/QualityType.as
+END
+BattleSky.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/166/client/src/game/utils/BattleSky.as
+END
+ModelType.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/166/client/src/game/utils/ModelType.as
+END
+GeneralSiteName.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/166/client/src/game/utils/GeneralSiteName.as
+END
+TroopType.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/166/client/src/game/utils/TroopType.as
+END
+TroopMode.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/is_king/!svn/ver/166/client/src/game/utils/TroopMode.as
+END
+DataName.as
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/is_king/!svn/ver/185/client/src/game/utils/DataName.as
+END
+GetBattleGeneralType.as
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/is_king/!svn/ver/166/client/src/game/utils/GetBattleGeneralType.as
+END

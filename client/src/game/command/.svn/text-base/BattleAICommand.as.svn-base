@@ -1,0 +1,32 @@
+package game.command 
+{
+	import game.action.BattleAIAction;
+	import game.notice.BattleAINotice;
+	import shipDock.framework.core.command.Command;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleAICommand extends Command 
+	{
+		
+		public static const RUN_AI_COMMAND:String = "runAICommand";
+		public static const BATTLE_AI_CREATE_BATTLE_CARD_COMMAND:String = "battleAIcreateCardBattleCommand";
+		
+		public function BattleAICommand(isAutoExecute:Boolean=true) 
+		{
+			super(isAutoExecute);
+			
+		}
+		
+		public function runAICommand(notice:BattleAINotice):void {
+			this.action.callProxyed(BattleAINotice.RUN_AI_NOTICE, notice);
+		}
+		
+		public function battleAIcreateCardBattleCommand(notice:BattleAINotice):void {
+			this.action.callProxyed(BattleAINotice.BATTLE_AI_CREATE_BATTLE_CARD_NOTICE, notice);
+		}
+	}
+
+}

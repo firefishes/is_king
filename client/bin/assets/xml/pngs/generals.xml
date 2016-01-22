@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:ada5de63a376cb0c0a82a0cac3149bd0$ -->
+<TextureAtlas imagePath="generals.png">
+    <SubTexture name="demoG0" x="158" y="244" width="79" height="95"/>
+    <SubTexture name="demoG1" x="2" y="244" width="154" height="150"/>
+    <SubTexture name="demoG2" x="2" y="2" width="238" height="240" frameX="-1" frameY="0" frameWidth="240" frameHeight="242"/>
+</TextureAtlas>

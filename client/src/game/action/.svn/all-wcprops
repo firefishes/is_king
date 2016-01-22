@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/is_king/!svn/ver/276/client/src/game/action
+END
+ActionName.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/217/client/src/game/action/ActionName.as
+END
+BattleOptionPannelActoin.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/is_king/!svn/ver/278/client/src/game/action/BattleOptionPannelActoin.as
+END
+MainAction.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/278/client/src/game/action/MainAction.as
+END
+BattleAIAction.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/265/client/src/game/action/BattleAIAction.as
+END
+BattleViewAction.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/278/client/src/game/action/BattleViewAction.as
+END
+GameLoadID.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/103/client/src/game/action/GameLoadID.as
+END
+BattleInitGeneralShowAction.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/is_king/!svn/ver/278/client/src/game/action/BattleInitGeneralShowAction.as
+END
+BattleCardIconAction.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/is_king/!svn/ver/278/client/src/game/action/BattleCardIconAction.as
+END

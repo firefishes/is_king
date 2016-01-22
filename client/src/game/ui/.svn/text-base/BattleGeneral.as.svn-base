@@ -1,0 +1,92 @@
+package game.ui 
+{
+	import game.action.ActionName;
+	import game.action.GameLoadID;
+	import game.model.GeneralModel;
+	import game.notice.NoticeName;
+	import game.utils.BattleOwner;
+	
+	import shipDock.framework.application.SDCore;
+	import shipDock.framework.application.component.SDComponent;
+	import shipDock.framework.application.component.SDImage;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleGeneral extends SDComponent 
+	{
+		
+		private var _battleOwner:int;
+		
+		public function BattleGeneral() 
+		{
+			super();
+			
+			this.addNotice(NoticeName.LOAD_ASSET_LIST_COMPLETE, this.updateBattleGeneral);
+		}
+		
+		override public function dispose():void 
+		{
+			super.dispose();
+			
+			this.removeNotice(NoticeName.LOAD_ASSET_LIST_COMPLETE, this.updateBattleGeneral);
+		}
+		
+		override public function redraw():void 
+		{
+			super.redraw();
+		}
+		
+		private function updateBattleGeneral(notice:LoadAssetListNotice = null):void {
+			if (this.generalModel == null) {
+				return;
+			}
+			if (notice != null) {
+				if (notice.loadID != GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW) {
+					return;
+				}
+			}
+			var scale:Number = 0.8;
+			var image:SDImage = SDCore.getInstance().assetManager.getImage(this.generalModel.middelImageID, false, true);
+			image.scaleX = scale;
+			image.scaleY = scale;
+			image.x += image.width / 2 - image.width * (1 - scale);
+			image.y += image.height / 2 - image.height * (1 - scale);
+			//var cliped:ClippedSprite = new ClippedSprite(image.width, 100);
+			//cliped.addChild(image);
+			//this.addChild(cliped);
+			this.addChild(image);
+		}
+		
+		override public function set data(value:Object):void 
+		{
+			var name:String = NoticeName.QUEUE_ASSET_PROXY;
+			var subCommand:String = LoadAssetListCommand.ADD_ASSET_TO_QUEUE_COMMAND;
+			var loadID:String = GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW;
+			var assetName:String = (value as GeneralModel).assetID;
+			
+			this.sendNotice(new LoadAssetListNotice(name, subCommand, loadID, assetName));
+			super.data = value;
+		}
+		
+		public function get generalModel():GeneralModel {
+			return this.data as GeneralModel;
+		}
+		
+		public function set battleOwner(value:int):void 
+		{
+			_battleOwner = value;
+		}
+		
+		public function get battleOwner():int 
+		{
+			return _battleOwner;
+		}
+		
+		public function get isUserOwner():Boolean {
+			return (this._battleOwner == BattleOwner.USER_VALUE);
+		}
+	}
+
+}

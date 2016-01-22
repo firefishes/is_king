@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:6ef8e0c8817f6e50be25096b897baf1e$ -->
+<TextureAtlas imagePath="popupDemo.png">
+    <SubTexture name="registration" x="2" y="2" width="640" height="645"/>
+</TextureAtlas>

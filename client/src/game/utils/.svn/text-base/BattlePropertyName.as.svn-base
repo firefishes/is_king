@@ -1,0 +1,23 @@
+package game.utils 
+{
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class BattlePropertyName 
+	{
+		
+		public static const ANGER:String = "anger";
+		public static const MORALE:String = "morale";
+		public static const INTELLIGENCE:String = "intelligence";
+		
+		public static const BATTLE_PROPERTY_LIST:Array = [ANGER, MORALE, INTELLIGENCE];
+		
+		public function BattlePropertyName() 
+		{
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:4e37c154bc806801bdeab6786382791f$ -->
+<TextureAtlas imagePath="playerCard.png">
+    <SubTexture name="cc0_0" x="296" y="32" width="22" height="30" frameX="-4" frameY="-4" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_1" x="920" y="2" width="10" height="28" frameX="-10" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_2" x="98" y="32" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_3" x="74" y="30" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_4" x="50" y="30" width="22" height="28" frameX="-3" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_5" x="26" y="30" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_6" x="2" y="30" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_7" x="980" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_8" x="956" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc0_9" x="932" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_0" x="272" y="32" width="22" height="30" frameX="-4" frameY="-4" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_1" x="716" y="2" width="10" height="28" frameX="-10" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_2" x="896" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_3" x="872" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_4" x="848" y="2" width="22" height="28" frameX="-3" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_5" x="824" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_6" x="800" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_7" x="776" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_8" x="752" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc1_9" x="728" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_0" x="248" y="32" width="22" height="30" frameX="-4" frameY="-4" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_1" x="512" y="2" width="10" height="28" frameX="-10" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_2" x="692" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_3" x="668" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_4" x="644" y="2" width="22" height="28" frameX="-3" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_5" x="620" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_6" x="596" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_7" x="572" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_8" x="548" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc2_9" x="524" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_0" x="224" y="32" width="22" height="30" frameX="-4" frameY="-4" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_1" x="308" y="2" width="10" height="28" frameX="-10" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_2" x="488" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_3" x="464" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_4" x="440" y="2" width="22" height="28" frameX="-3" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_5" x="416" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_6" x="392" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_7" x="368" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_8" x="344" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc3_9" x="320" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_0" x="200" y="32" width="22" height="30" frameX="-4" frameY="-4" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_1" x="104" y="2" width="10" height="28" frameX="-10" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_2" x="284" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_3" x="260" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_4" x="236" y="2" width="22" height="28" frameX="-3" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_5" x="212" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_6" x="188" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_7" x="164" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_8" x="140" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cc4_9" x="116" y="2" width="22" height="28" frameX="-4" frameY="-5" frameWidth="30" frameHeight="40"/>
+    <SubTexture name="cframe_0" x="650" y="462" width="322" height="428"/>
+    <SubTexture name="cframe_1" x="326" y="462" width="322" height="428"/>
+    <SubTexture name="cframe_2" x="2" y="66" width="322" height="428"/>
+    <SubTexture name="cframe_3" x="680" y="32" width="322" height="428"/>
+    <SubTexture name="cframe_4" x="356" y="32" width="322" height="428"/>
+    <SubTexture name="cpos_c" x="2" y="2" width="22" height="26" frameX="-11" frameY="-4" frameWidth="46" frameHeight="34"/>
+    <SubTexture name="cpos_pf" x="26" y="2" width="36" height="26" frameX="-5" frameY="-4" frameWidth="46" frameHeight="34"/>
+    <SubTexture name="cpos_pg" x="64" y="2" width="38" height="26" frameX="-4" frameY="-4" frameWidth="46" frameHeight="34"/>
+    <SubTexture name="cpos_sf" x="122" y="32" width="36" height="28" frameX="-5" frameY="-2" frameWidth="46" frameHeight="34"/>
+    <SubTexture name="cpos_sg" x="160" y="32" width="38" height="28" frameX="-4" frameY="-2" frameWidth="46" frameHeight="34"/>
+    <SubTexture name="cstar" x="320" y="32" width="34" height="32" frameX="-1" frameY="0" frameWidth="36" frameHeight="32"/>
+</TextureAtlas>

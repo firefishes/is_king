@@ -1,0 +1,26 @@
+package game.utils {
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class GeneralSiteName 
+	{
+		public static const COACH:int = 0;//主帅
+		public static const ADVISER:int = 1;//军师
+		public static const L_PIONEER:int = 2;//左先锋
+		public static const R_PIONEER:int = 3;//右先锋
+		public static const L_WING:int = 4;//左翼
+		public static const R_WING:int = 5;//右翼
+		public static const UNIT_TRAIN:int = 6;//辎重队
+		public static const REINFORCEMENTS:int = 7;//合后
+		
+		public static const SITE_MAX:int = 8;
+		
+		public function GeneralSiteName() 
+		{
+			
+		}
+		
+	}
+
+}

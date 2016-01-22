@@ -1,0 +1,53 @@
+package game.action 
+{
+	import game.notice.GameQueueAssetProxyNotice;
+	import game.notice.NoticeName;
+	import game.view.battle.battleInit.BattleInitGeneralShow;
+	
+	import shipDock.command.QueueLoaderProxyCommand;
+	import shipDock.framework.application.loader.FileAssetQueueLoader;
+	import shipDock.framework.core.action.Action;
+	import shipDock.framework.core.action.SDViewActoin;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class BattleInitGeneralShowAction extends SDViewActoin 
+	{
+		
+		public function BattleInitGeneralShowAction(name:String=null) 
+		{
+			super(name);
+			
+			this.addNotice(NoticeName.LOAD_ASSET_LIST_COMPLETE, this.loadAssetListComplete);
+		}
+		
+		override protected function setCommand():void 
+		{
+			super.setCommand();
+		}
+		
+		public function startLoadBattleGeneralAsset():void {
+			var name:String = NoticeName.QUEUE_ASSET_PROXY;
+			var loadID:String = GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW;
+			this.sendNotice(new LoadAssetListNotice(name, subCommand, loadID));
+			
+			this.sendNotice(new GameQueueAssetProxyNotice(QueueLoaderProxyCommand.ADD_ASSET_TO_QUEUE_COMMAND, GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW, "battleCard", FileAssetQueueLoader, [null]));
+		}
+		
+		private function loadAssetListComplete(notice:LoadAssetListNotice):void {
+			if (this.battleInitGeneralShow == null) {
+				return;
+			}
+			if (notice.loadID == GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW) {
+				this.battleInitGeneralShow.batttleGeneralAssetListLoaded();
+			}
+		}
+		
+		private function get battleInitGeneralShow():BattleInitGeneralShow {
+			return this.proxyed as BattleInitGeneralShow;
+		}
+	}
+
+}

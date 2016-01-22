@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:c9034368b3025e71b2e2a4c27bfbf886$ -->
+<TextureAtlas imagePath="battleView.png">
+    <SubTexture name="angerValueBar" x="290" y="654" width="52" height="101" frameX="0" frameY="-2" frameWidth="52" frameHeight="103"/>
+    <SubTexture name="angerValueBarBg" x="236" y="681" width="52" height="101" frameX="0" frameY="-2" frameWidth="52" frameHeight="103"/>
+    <SubTexture name="battleCardBg0" x="2" y="578" width="232" height="286"/>
+    <SubTexture name="battleCardBg1" x="2" y="2" width="233" height="286"/>
+    <SubTexture name="battleCardBg2" x="236" y="290" width="232" height="286"/>
+    <SubTexture name="battleCardBg3" x="2" y="290" width="232" height="286"/>
+    <SubTexture name="battleCardBg4" x="237" y="2" width="232" height="286"/>
+    <SubTexture name="battleDialog" x="2" y="866" width="208" height="125"/>
+    <SubTexture name="intelligenceValueBar" x="422" y="578" width="52" height="101" frameX="0" frameY="-2" frameWidth="52" frameHeight="103"/>
+    <SubTexture name="intelligenceValueBarBg" x="212" y="866" width="52" height="101" frameX="0" frameY="-2" frameWidth="52" frameHeight="103"/>
+    <SubTexture name="moraleValueBar" x="344" y="578" width="76" height="74" frameX="0" frameY="-2" frameWidth="76" frameHeight="76"/>
+    <SubTexture name="moraleValueBarBg" x="266" y="578" width="76" height="74" frameX="0" frameY="-2" frameWidth="76" frameHeight="76"/>
+</TextureAtlas>

@@ -1,0 +1,45 @@
+package game.notice 
+{
+	import shipDock.framework.core.interfaces.INoticeSender;
+	import shipDock.framework.core.notice.Notice;
+	import shipDock.interfaces.IQueueLoaderProxyNotice;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class GameQueueAssetProxyNotice extends Notice implements IQueueLoaderProxyNotice 
+	{
+		
+		public function GameQueueAssetProxyNotice(subCommand:String, loadID:String, assets:* = null, loaderClass:Class = null, classArgs:Array = null) 
+		{
+			super(NoticeName.QUEUE_ASSET_PROXY, {"loadID":loadID, "assets":assets, "loaderClass":loaderClass, "classArgs":classArgs});
+			this.subCommand = subCommand;
+		}
+		
+		/* INTERFACE shipDock.interfaces.IQueueLoaderProxyNotice */
+		
+		public function get loadID():String 
+		{
+			return this.data["loadID"];
+		}
+		
+		public function get assets():* 
+		{
+			return this.data["assets"];
+		}
+		
+		public function get loaderClass():Class 
+		{
+			return this.data["loaderClass"];
+		}
+		
+		public function get classArgs():Array 
+		{
+			return this.data["classArgs"];
+		}
+		
+		
+	}
+
+}

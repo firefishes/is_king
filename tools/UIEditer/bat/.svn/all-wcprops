@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/is_king/!svn/ver/70/tools/UIEditer/bat
+END
+Packager.bat
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/is_king/!svn/ver/29/tools/UIEditer/bat/Packager.bat
+END
+SetupSDK.bat
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/is_king/!svn/ver/29/tools/UIEditer/bat/SetupSDK.bat
+END
+SetupApplication.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/is_king/!svn/ver/70/tools/UIEditer/bat/SetupApplication.bat
+END
+CreateCertificate.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/is_king/!svn/ver/29/tools/UIEditer/bat/CreateCertificate.bat
+END
+NBAUIParser.p12
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/is_king/!svn/ver/29/tools/UIEditer/bat/NBAUIParser.p12
+END

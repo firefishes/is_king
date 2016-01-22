@@ -1,0 +1,24 @@
+package game.notice {
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class NoticeName 
+	{
+		
+		public static const BATTLE_VIEW:String = "battleView";
+		public static const BATTLE_DATA:String = "battleData";
+		public static const BATTLE_OPTION_PANNEL:String = "battleOptionPannel";
+		public static const BATTLE_AI:String = "battleAI";
+		public static const BATTLE_INIT_GENERAL_SHOW:String = "battleInitGeneralShow";
+		public static const LOAD_ASSET_LIST_PROGRESS:String = "loadAssetListProgress";
+		public static const LOAD_ASSET_LIST_COMPLETE:String = "loadAssetListComplete";
+		
+		public function NoticeName() 
+		{
+			
+		}
+		
+	}
+
+}

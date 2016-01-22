@@ -1,0 +1,43 @@
+package game.action 
+{
+	import game.command.IsKingStartUpCommand;
+	import game.data.BattleData;
+	import game.data.CampData;
+	import game.data.ProfileData;
+	import game.notice.NoticeName;
+	import shipDock.framework.core.command.UICommand;
+	import shipDock.framework.core.command.ViewCommand;
+	import shipDock.framework.core.notice.SDNoticeName;
+	
+	import shipDock.command.QueueLoaderProxyCommand;
+	import shipDock.data.QueueLoaderProxy;
+	import shipDock.framework.core.action.Action;
+	import shipDock.framework.core.action.SDAction;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class MainAction extends SDAction 
+	{
+		
+		public function MainAction() 
+		{
+			super();
+		}
+		
+		override protected function setCommand():void 
+		{
+			super.setCommand();
+			
+			this.registered(SDNoticeName.SD_START_UP, IsKingStartUpCommand);
+			
+			this.startUp();
+		}
+		
+		public function startView():void {
+			this.sendNotice(SDNoticeName.SD_UI, BattleViewAction.NAME, UICommand.OPEN_VIEW_COMMAND);
+		}
+	}
+
+}

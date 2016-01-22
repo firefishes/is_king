@@ -1,0 +1,37 @@
+package game.notice 
+{
+	import shipDock.framework.core.notice.Notice;
+	
+	/**
+	 * ...
+	 * @author ...
+	 */
+	public class BattleViewNotice extends Notice 
+	{
+		
+		public static const RUN_TIC_NOTICE:String = "runTicNotice";
+		public static const STOP_TIC_NOTICE:String = "stopTicNotice";
+		public static const INIT_BATTLE_VIEW_NOTICE:String = "initBattleViewNotice";
+		public static const GET_BATTLE_POS_BY_GRID_NOTICE:String = "getBattlePosByGridNotice";
+		public static const UPDATE_BATTLE_VIEW_ON_FRAME_NOTICE:String = "updateBattleViewOnFrameNotice";
+		public static const ADD_BATTLE_CARD_TO_VIEW_NOTICE:String = "addBattleCardToViewNotice";
+		public static const ADD_BATTLE_BG_NOTICE:String = "addBattleBgNotice";
+		public static const ADD_BATTLE_WORD_NOTICE:String = "addBattleWord";
+		public static const UPDATE_BATTLE_VIEW_STATIC_TEXT_NOTICE:String = "updateBattleViewStaticTextNotice";
+		public static const MERGE_BATTLE_DIALOG_TEXT_NOTICE:String = "mergeBattleDialogTextNotice";
+		public static const ADD_BATTLE_GENERAL_TO_LIST_NOTIcE:String = "addBattleGeneralToListNotice";
+		public static const GET_BATTLE_OPEN_NOTICE:String = "getBattleOpenNotice";
+		public static const INIT_BATTLE_GENERAL_NOTICE:String = "initBattleGeneralNotice";
+		
+		public static const BATTLE_CARD_SHOWED_NOTICE:String = "battleCardShowedNotice";
+		
+		public function BattleViewNotice(subCommand:String, data:*=null) 
+		{
+			this.subCommand = subCommand;
+			super(NoticeName.BATTLE_VIEW, data);
+			
+		}
+		
+	}
+
+}

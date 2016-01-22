@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:0d1c0255e26bad677cf3af107e6481a7$ -->
+<TextureAtlas imagePath="venue.png">
+    <SubTexture name="audience_0001" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0002" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0003" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0004" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0005" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0006" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0007" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0008" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0009" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0010" x="2" y="616" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0011" x="2" y="616" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0012" x="2" y="616" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0013" x="2" y="616" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0014" x="2" y="616" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0015" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0016" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0017" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0018" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0019" x="1924" y="914" width="1920" height="444" frameX="0" frameY="-12" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0020" x="1925" y="2" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0021" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0022" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0023" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="audience_0024" x="1925" y="458" width="1920" height="454" frameX="0" frameY="-2" frameWidth="1920" frameHeight="456"/>
+    <SubTexture name="fire_0001" x="3887" y="2" width="38" height="40" frameX="-7" frameY="-8" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0002" x="3847" y="44" width="36" height="40" frameX="-9" frameY="-8" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0003" x="4041" y="2" width="36" height="40" frameX="-9" frameY="-7" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0004" x="4003" y="2" width="36" height="40" frameX="-10" frameY="-6" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0005" x="3965" y="2" width="36" height="40" frameX="-10" frameY="-6" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0006" x="3999" y="80" width="36" height="30" frameX="-10" frameY="-15" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0007" x="4037" y="78" width="36" height="30" frameX="-10" frameY="-14" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0008" x="4037" y="44" width="36" height="32" frameX="-9" frameY="-13" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0009" x="3999" y="44" width="36" height="34" frameX="-9" frameY="-12" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0010" x="3961" y="44" width="36" height="38" frameX="-8" frameY="-9" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0011" x="3923" y="44" width="36" height="38" frameX="-9" frameY="-10" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0012" x="3921" y="84" width="34" height="40" frameX="-11" frameY="-8" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0013" x="3885" y="84" width="34" height="42" frameX="-11" frameY="-6" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0014" x="4037" y="110" width="34" height="42" frameX="-12" frameY="-5" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0015" x="3847" y="86" width="34" height="40" frameX="-11" frameY="-7" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0016" x="3957" y="84" width="34" height="38" frameX="-12" frameY="-9" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0017" x="3885" y="44" width="36" height="38" frameX="-11" frameY="-9" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0018" x="3927" y="2" width="36" height="40" frameX="-11" frameY="-8" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="fire_0019" x="3847" y="2" width="38" height="40" frameX="-9" frameY="-7" frameWidth="60" frameHeight="52"/>
+    <SubTexture name="venue0" x="2" y="2" width="1921" height="612"/>
+</TextureAtlas>

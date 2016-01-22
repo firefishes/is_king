@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:7c1edbe1b8b985c89f181fb16bdefb0a$ -->
+<TextureAtlas imagePath="card.png">
+    <SubTexture name="btn0_demobtn" x="2" y="84" width="199" height="78" frameX="-1" frameY="0" frameWidth="203" frameHeight="80"/>
+    <SubTexture name="btn1_demobtn" x="2" y="2" width="203" height="80"/>
+    <SubTexture name="btnBg_max" x="2" y="164" width="185" height="67"/>
+    <SubTexture name="btnBg_min" x="344" y="199" width="120" height="45"/>
+    <SubTexture name="demoAdd" x="466" y="174" width="38" height="37"/>
+    <SubTexture name="demoMoneyIcon" x="189" y="202" width="35" height="35"/>
+    <SubTexture name="demoPic" x="441" y="73" width="66" height="58" frameX="-2" frameY="-10" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="demoPic2" x="441" y="133" width="45" height="39" frameX="0" frameY="-6" frameWidth="45" frameHeight="45"/>
+    <SubTexture name="demoStarIcon" x="466" y="213" width="35" height="35"/>
+    <SubTexture name="itemimg" x="412" y="2" width="83" height="69" frameX="-4" frameY="-3" frameWidth="93" frameHeight="75"/>
+    <SubTexture name="player_max" x="207" y="2" width="135" height="198" frameX="-1" frameY="-1" frameWidth="137" frameHeight="200"/>
+    <SubTexture name="player_min" x="344" y="2" width="66" height="98" frameX="-1" frameY="-1" frameWidth="68" frameHeight="100"/>
+    <SubTexture name="skillImg" x="344" y="102" width="95" height="95"/>
+</TextureAtlas>

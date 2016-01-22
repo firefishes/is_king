@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:459af760e2bce51bdbaf8a852bebbb73$ -->
+<TextureAtlas imagePath="cardview.png">
+    <SubTexture name="add" x="1735" y="1256" width="19" height="18" frameX="-2" frameY="-2" frameWidth="23" frameHeight="22"/>
+    <SubTexture name="bar0" x="519" y="1994" width="219" height="11" frameX="0" frameY="-1" frameWidth="219" frameHeight="13"/>
+    <SubTexture name="bar1" x="2" y="2024" width="219" height="7"/>
+    <SubTexture name="bracers" x="1926" y="275" width="89" height="89"/>
+    <SubTexture name="btn0_addplayer" x="1519" y="1242" width="214" height="283"/>
+    <SubTexture name="btn0_adv" x="1763" y="1192" width="168" height="82" frameX="0" frameY="-2" frameWidth="168" frameHeight="84"/>
+    <SubTexture name="btn0_change" x="1887" y="769" width="116" height="41"/>
+    <SubTexture name="btn0_close" x="1887" y="812" width="44" height="32"/>
+    <SubTexture name="btn0_inherit" x="1887" y="683" width="118" height="41"/>
+    <SubTexture name="btn0_inherit2" x="1620" y="1873" width="171" height="86" frameX="0" frameY="0" frameWidth="173" frameHeight="90"/>
+    <SubTexture name="btn0_mixitemframe" x="964" y="840" width="909" height="182" frameX="-5" frameY="-9" frameWidth="921" frameHeight="194"/>
+    <SubTexture name="btn0_pro" x="740" y="1994" width="118" height="41"/>
+    <SubTexture name="btn0_raise" x="1926" y="456" width="97" height="69"/>
+    <SubTexture name="btn0_risingstar" x="1556" y="1961" width="168" height="85"/>
+    <SubTexture name="btn0_selectplayerbg" x="1303" y="1139" width="458" height="101" frameX="-4" frameY="-7" frameWidth="468" frameHeight="113"/>
+    <SubTexture name="btn0_skill" x="1735" y="1448" width="118" height="41"/>
+    <SubTexture name="btn0_spec" x="1887" y="726" width="116" height="41"/>
+    <SubTexture name="btn0_split" x="2005" y="726" width="41" height="42" frameX="0" frameY="-2" frameWidth="41" frameHeight="44"/>
+    <SubTexture name="btn0_train" x="1735" y="1405" width="118" height="41"/>
+    <SubTexture name="btn0_trainone" x="1366" y="1810" width="252" height="82" frameX="0" frameY="0" frameWidth="252" frameHeight="84"/>
+    <SubTexture name="btn0_trainten" x="1620" y="1788" width="250" height="83"/>
+    <SubTexture name="btn1_addplayer" x="1303" y="1242" width="214" height="283"/>
+    <SubTexture name="btn1_adv" x="1773" y="1108" width="168" height="82" frameX="0" frameY="-2" frameWidth="168" frameHeight="84"/>
+    <SubTexture name="btn1_change" x="1926" y="640" width="116" height="41"/>
+    <SubTexture name="btn1_close" x="1561" y="1894" width="44" height="33"/>
+    <SubTexture name="btn1_inherit" x="1735" y="1362" width="118" height="41"/>
+    <SubTexture name="btn1_inherit2" x="1630" y="1615" width="171" height="86" frameX="0" frameY="0" frameWidth="173" frameHeight="90"/>
+    <SubTexture name="btn1_mixitemframe" x="964" y="644" width="921" height="194"/>
+    <SubTexture name="btn1_pro" x="1735" y="1319" width="118" height="41"/>
+    <SubTexture name="btn1_raise" x="1926" y="527" width="94" height="68"/>
+    <SubTexture name="btn1_risingstar" x="1386" y="1961" width="168" height="85"/>
+    <SubTexture name="btn1_selectplayerbg" x="1303" y="1024" width="468" height="113"/>
+    <SubTexture name="btn1_skill" x="1735" y="1276" width="118" height="41"/>
+    <SubTexture name="btn1_spec" x="1926" y="597" width="116" height="41"/>
+    <SubTexture name="btn1_split" x="2005" y="726" width="41" height="42" frameX="0" frameY="-2" frameWidth="41" frameHeight="44"/>
+    <SubTexture name="btn1_train" x="1441" y="1894" width="118" height="41"/>
+    <SubTexture name="btn1_trainone" x="1366" y="1640" width="252" height="84"/>
+    <SubTexture name="btn1_trainten" x="1620" y="1703" width="250" height="83"/>
+    <SubTexture name="btn2_adv" x="1773" y="1024" width="168" height="82" frameX="0" frameY="-2" frameWidth="168" frameHeight="84"/>
+    <SubTexture name="btn2_inherit2" x="1630" y="1527" width="171" height="86" frameX="0" frameY="0" frameWidth="173" frameHeight="90"/>
+    <SubTexture name="btn2_risingstar" x="1216" y="1961" width="168" height="85"/>
+    <SubTexture name="btn2_trainone" x="1366" y="1726" width="252" height="82" frameX="0" frameY="0" frameWidth="252" frameHeight="84"/>
+    <SubTexture name="btn2_trainten" x="964" y="1942" width="250" height="83"/>
+    <SubTexture name="carddemo" x="964" y="1656" width="214" height="284"/>
+    <SubTexture name="cardviewbg" x="2" y="1286" width="960" height="640"/>
+    <SubTexture name="chartbg" x="1180" y="1656" width="184" height="211" frameX="-19" frameY="-12" frameWidth="222" frameHeight="235"/>
+    <SubTexture name="drink" x="1726" y="2018" width="17" height="28" frameX="-4" frameY="-3" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="frame" x="1793" y="1873" width="70" height="70"/>
+    <SubTexture name="frameoff" x="1374" y="1894" width="65" height="65"/>
+    <SubTexture name="headani_0001" x="1855" y="1450" width="84" height="46"/>
+    <SubTexture name="headani_0002" x="1855" y="1402" width="84" height="46"/>
+    <SubTexture name="headani_0003" x="860" y="1994" width="84" height="46"/>
+    <SubTexture name="headband" x="1926" y="184" width="89" height="89"/>
+    <SubTexture name="headicon" x="1735" y="1242" width="26" height="12" frameX="-3" frameY="-14" frameWidth="34" frameHeight="44"/>
+    <SubTexture name="inheritbg" x="964" y="2" width="960" height="640"/>
+    <SubTexture name="kneepad" x="1926" y="366" width="89" height="88"/>
+    <SubTexture name="mixbg" x="2" y="644" width="960" height="640"/>
+    <SubTexture name="money" x="1735" y="1491" width="48" height="34"/>
+    <SubTexture name="mplayer" x="1307" y="1894" width="65" height="65"/>
+    <SubTexture name="probg" x="964" y="1024" width="337" height="630" frameX="-3" frameY="-7" frameWidth="341" frameHeight="640"/>
+    <SubTexture name="shoes" x="1216" y="1869" width="89" height="90"/>
+    <SubTexture name="shorts" x="1926" y="93" width="89" height="89"/>
+    <SubTexture name="skillframe" x="1303" y="1527" width="325" height="111"/>
+    <SubTexture name="skillicon" x="1855" y="1339" width="68" height="61"/>
+    <SubTexture name="skilliconcover" x="1855" y="1276" width="68" height="61"/>
+    <SubTexture name="spliticon" x="1726" y="1961" width="55" height="55"/>
+    <SubTexture name="titlebg" x="2" y="1928" width="960" height="64" frameX="0" frameY="-8" frameWidth="960" frameHeight="72"/>
+    <SubTexture name="trainbar" x="2" y="2010" width="513" height="12" frameX="-1" frameY="-2" frameWidth="515" frameHeight="14"/>
+    <SubTexture name="trainbarframe" x="2" y="1994" width="515" height="14"/>
+    <SubTexture name="trainbg" x="2" y="2" width="960" height="640"/>
+    <SubTexture name="trainiconmax" x="1785" y="1491" width="31" height="34"/>
+    <SubTexture name="trainiconmin" x="1180" y="1869" width="22" height="24"/>
+    <SubTexture name="vest" x="1926" y="2" width="89" height="89"/>
+</TextureAtlas>

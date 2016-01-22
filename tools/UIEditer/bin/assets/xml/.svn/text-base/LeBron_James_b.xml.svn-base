@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:60b0d47767d17fcc6a38c3142d116e87$ -->
+<TextureAtlas imagePath="LeBron_James_b.png">
+    <SubTexture name="LeBron_James_b_1" x="326" y="432" width="322" height="428"/>
+    <SubTexture name="LeBron_James_b_2" x="326" y="2" width="322" height="428"/>
+    <SubTexture name="LeBron_James_b_3" x="2" y="432" width="322" height="428"/>
+    <SubTexture name="LeBron_James_b_4" x="2" y="2" width="322" height="428"/>
+</TextureAtlas>

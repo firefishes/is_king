@@ -1,0 +1,172 @@
+{
+    "100001": {
+        "skill_id_1": "400001",
+        "name": "NAME_100001",
+        "skill_id_3": "0",
+        "cn_name": "ËïÎä",
+        "skill_id_4": "0",
+        "decs": "DECS_100001",
+        "id": "100001",
+        "skill_id_2": "0"
+    },
+    "100002": {
+        "skill_id_1": "400002",
+        "name": "NAME_100002",
+        "skill_id_3": "0",
+        "cn_name": "²ܲÙ",
+        "skill_id_4": "0",
+        "decs": "DECS_100002",
+        "id": "100002",
+        "skill_id_2": "400003"
+    },
+    "100003": {
+        "skill_id_1": "400012",
+        "name": "NAME_100003",
+        "skill_id_3": "0",
+        "cn_name": "ÙøÕþ",
+        "skill_id_4": "0",
+        "decs": "DECS_100003",
+        "id": "100003",
+        "skill_id_2": "0"
+    },
+    "100004": {
+        "skill_id_1": "400013",
+        "name": "NAME_100004",
+        "skill_id_3": "0",
+        "cn_name": "ÀîÄÁ",
+        "skill_id_4": "0",
+        "decs": "DECS_100004",
+        "id": "100004",
+        "skill_id_2": "0"
+    },
+    "100005": {
+        "skill_id_1": "400014",
+        "name": "NAME_100005",
+        "skill_id_3": "0",
+        "cn_name": "°×Æð",
+        "skill_id_4": "0",
+        "decs": "DECS_100005",
+        "id": "100005",
+        "skill_id_2": "400015"
+    },
+    "100006": {
+        "skill_id_1": "400015",
+        "name": "NAME_100006",
+        "skill_id_3": "0",
+        "cn_name": "°×Æð",
+        "skill_id_4": "0",
+        "decs": "DECS_100006",
+        "id": "100006",
+        "skill_id_2": "0"
+    },
+    "100007": {
+        "skill_id_1": "400016",
+        "name": "NAME_100007",
+        "skill_id_3": "0",
+        "cn_name": "Á®ÆÄ",
+        "skill_id_4": "0",
+        "decs": "DECS_100007",
+        "id": "100007",
+        "skill_id_2": "0"
+    },
+    "100008": {
+        "skill_id_1": "400017",
+        "name": "NAME_100008",
+        "skill_id_3": "0",
+        "cn_name": "Íõôå",
+        "skill_id_4": "0",
+        "decs": "DECS_100008",
+        "id": "100008",
+        "skill_id_2": "0"
+    },
+    "100009": {
+        "skill_id_1": "400018",
+        "name": "NAME_100009",
+        "skill_id_3": "0",
+        "cn_name": "ÀîÐÅ",
+        "skill_id_4": "0",
+        "decs": "DECS_100009",
+        "id": "100009",
+        "skill_id_2": "0"
+    },
+    "100010": {
+        "skill_id_1": "400019",
+        "name": "NAME_100010",
+        "skill_id_3": "0",
+        "cn_name": "ÀÖÒã",
+        "skill_id_4": "0",
+        "decs": "DECS_100010",
+        "id": "100010",
+        "skill_id_2": "0"
+    },
+    "100011": {
+        "skill_id_1": "400020",
+        "name": "NAME_100011",
+        "skill_id_3": "0",
+        "cn_name": "ÎâÆð",
+        "skill_id_4": "0",
+        "decs": "DECS_100011",
+        "id": "100011",
+        "skill_id_2": "0"
+    },
+    "100012": {
+        "skill_id_1": "400021",
+        "name": "NAME_100012",
+        "skill_id_3": "0",
+        "cn_name": "Ëïë÷",
+        "skill_id_4": "0",
+        "decs": "DECS_100012",
+        "id": "100012",
+        "skill_id_2": "0"
+    },
+    "100013": {
+        "skill_id_1": "400022",
+        "name": "NAME_100013",
+        "skill_id_3": "0",
+        "cn_name": "ÅÓä¸",
+        "skill_id_4": "0",
+        "decs": "DECS_100013",
+        "id": "100013",
+        "skill_id_2": "0"
+    },
+    "100014": {
+        "skill_id_1": "400023",
+        "name": "NAME_100014",
+        "skill_id_3": "0",
+        "cn_name": "ÏîÓð",
+        "skill_id_4": "0",
+        "decs": "DECS_100014",
+        "id": "100014",
+        "skill_id_2": "400029"
+    },
+    "100015": {
+        "skill_id_1": "400028",
+        "name": "NAME_100015",
+        "skill_id_3": "0",
+        "cn_name": "Áõ±¸",
+        "skill_id_4": "0",
+        "decs": "DECS_100015",
+        "id": "100015",
+        "skill_id_2": "400029"
+    },
+    "100016": {
+        "skill_id_1": "400030",
+        "name": "NAME_100016",
+        "skill_id_3": "0",
+        "cn_name": "¹ØÓð",
+        "skill_id_4": "0",
+        "decs": "DECS_100016",
+        "id": "100016",
+        "skill_id_2": "400031"
+    },
+    "100017": {
+        "skill_id_1": "400032",
+        "name": "NAME_100017",
+        "skill_id_3": "0",
+        "cn_name": "ÕŷÉ",
+        "skill_id_4": "0",
+        "decs": "DECS_100017",
+        "id": "100017",
+        "skill_id_2": "400033"
+    }
+}

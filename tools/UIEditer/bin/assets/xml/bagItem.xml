@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:3b70dd814779a3a6b656d57815053f7c$ -->
+<TextureAtlas imagePath="bagItem.png">
+    <SubTexture name="bagitembg" x="2" y="755" width="960" height="640"/>
+    <SubTexture name="bagitemchanchutujing" x="169" y="2" width="93" height="23"/>
+    <SubTexture name="bagitemcosticon" x="674" y="2" width="52" height="35"/>
+    <SubTexture name="bagitemhuidi" x="2" y="231" width="323" height="140"/>
+    <SubTexture name="bagitemjiantou" x="2" y="2" width="41" height="22"/>
+    <SubTexture name="bagitemsuipian" x="303" y="29" width="44" height="45"/>
+    <SubTexture name="bagitemsuipianft" x="264" y="2" width="90" height="25"/>
+    <SubTexture name="bagitemxuanzhong" x="780" y="193" width="101" height="101"/>
+    <SubTexture name="bagpopitembg" x="652" y="296" width="355" height="457"/>
+    <SubTexture name="bagsellcost" x="544" y="2" width="128" height="34"/>
+    <SubTexture name="bagsellctbg" x="728" y="2" width="97" height="39"/>
+    <SubTexture name="beibaogezi" x="691" y="193" width="87" height="87"/>
+    <SubTexture name="btn0_bagchangchuitem" x="402" y="82" width="278" height="40"/>
+    <SubTexture name="btn0_bagitemBack" x="756" y="86" width="72" height="48"/>
+    <SubTexture name="btn0_bagitemcailiao" x="854" y="136" width="112" height="55" frameX="-20" frameY="0" frameWidth="132" frameHeight="55"/>
+    <SubTexture name="btn0_bagitemchushou" x="2" y="70" width="118" height="41"/>
+    <SubTexture name="btn0_bagitemhecheng" x="589" y="39" width="118" height="41"/>
+    <SubTexture name="btn0_bagitemquanbu" x="740" y="136" width="112" height="55" frameX="-20" frameY="0" frameWidth="132" frameHeight="55"/>
+    <SubTexture name="btn0_bagitemquedinghecheng" x="456" y="124" width="168" height="48"/>
+    <SubTexture name="btn0_bagitemsuipian" x="626" y="136" width="112" height="55" frameX="-20" frameY="0" frameWidth="132" frameHeight="55"/>
+    <SubTexture name="btn0_bagitemxiangqing" x="469" y="38" width="118" height="41"/>
+    <SubTexture name="btn0_bagitemzhuangbei" x="2" y="113" width="112" height="55" frameX="-20" frameY="0" frameWidth="132" frameHeight="55"/>
+    <SubTexture name="btn0_bagsellctjia" x="953" y="2" width="40" height="40"/>
+    <SubTexture name="btn0_bagsellctjian" x="911" y="2" width="40" height="40"/>
+    <SubTexture name="btn0_bagsellquesel" x="286" y="124" width="168" height="48"/>
+    <SubTexture name="btn0_bagsellzuida" x="450" y="2" width="92" height="32"/>
+    <SubTexture name="btn0_itemChosback" x="2" y="26" width="59" height="40"/>
+    <SubTexture name="btn1_bagchangchuitem" x="122" y="79" width="278" height="40"/>
+    <SubTexture name="btn1_bagitemBack" x="682" y="86" width="72" height="48"/>
+    <SubTexture name="btn1_bagitemcailiao" x="404" y="174" width="132" height="55"/>
+    <SubTexture name="btn1_bagitemchushou" x="349" y="36" width="118" height="41"/>
+    <SubTexture name="btn1_bagitemhecheng" x="183" y="29" width="118" height="41"/>
+    <SubTexture name="btn1_bagitemquanbu" x="270" y="174" width="132" height="55"/>
+    <SubTexture name="btn1_bagitemquedinghecheng" x="116" y="121" width="168" height="48"/>
+    <SubTexture name="btn1_bagitemsuipian" x="136" y="171" width="132" height="55"/>
+    <SubTexture name="btn1_bagitemxiangqing" x="63" y="27" width="118" height="41"/>
+    <SubTexture name="btn1_bagitemzhuangbei" x="2" y="171" width="132" height="55"/>
+    <SubTexture name="btn1_bagsellctjia" x="869" y="2" width="40" height="40"/>
+    <SubTexture name="btn1_bagsellctjian" x="827" y="2" width="40" height="40"/>
+    <SubTexture name="btn1_bagsellquesel" x="830" y="86" width="168" height="48"/>
+    <SubTexture name="btn1_bagsellzuida" x="356" y="2" width="92" height="32"/>
+    <SubTexture name="btn1_itemChosback" x="2" y="26" width="59" height="40"/>
+    <SubTexture name="btn2_bagchangchuitem" x="709" y="44" width="278" height="40"/>
+    <SubTexture name="itemchosblbg" x="327" y="263" width="323" height="186"/>
+    <SubTexture name="itemchosftxz" x="45" y="2" width="122" height="22"/>
+    <SubTexture name="popbagzhuangbeihecheng" x="538" y="193" width="151" height="68"/>
+</TextureAtlas>

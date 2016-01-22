@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:9f8caf6a49684cdcbb6912c1765c5618$ -->
+<TextureAtlas imagePath="font_0.png">
+    <SubTexture name="font" x="2" y="2" width="248" height="98" frameX="-1" frameY="-2" frameWidth="256" frameHeight="256"/>
+</TextureAtlas>

@@ -1,0 +1,145 @@
+package game.view.battle.battleInit
+{
+	import flash.geom.Point;
+	import game.action.BattleInitGeneralShowAction;
+	import game.action.GameLoadID;
+	import game.command.BattleViewCommand;
+	import game.notice.NoticeName;
+	import game.model.GeneralModel;
+	import game.notice.BattleViewNotice;
+	import game.notice.CreateBattleGeneralNotice;
+	import game.notice.GameQueueAssetProxyNotice;
+	import game.ui.BattleGeneral;
+	import game.utils.BattleOwner;
+	import game.view.battle.BattleSetting;
+	import shipDock.command.QueueLoaderProxyCommand;
+	import shipDock.framework.application.effect.AnimatableEffect;
+	import shipDock.framework.application.effect.ParallelEffect;
+	import shipDock.framework.application.loader.FileAssetQueueLoader;
+	import shipDock.framework.core.interfaces.IQueueExecuter;
+	import shipDock.framework.application.SDConfig;
+	import shipDock.framework.core.manager.NoticeManager;
+	import shipDock.framework.core.queueExecuter.QueueExecuter;
+	import shipDock.framework.core.queueExecuter.QueueExecuterEvent;
+	import starling.animation.IAnimatable;
+	import starling.events.EventDispatcher;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class BattleInitGeneralShow extends EventDispatcher implements IQueueExecuter
+	{
+		
+		private var _enemyList:Array;
+		private var _userList:Array;
+		private var _generalCount:int;
+		
+		private var _queue:QueueExecuter;
+		private var _parallel:ParallelEffect;
+		private var _action:BattleInitGeneralShowAction;
+		
+		public function BattleInitGeneralShow(userList:Array, enemyList:Array)
+		{
+			super();
+			this._generalCount = 0;
+			this._userList = userList;
+			this._enemyList = enemyList;
+			
+			this._queue = new QueueExecuter();
+			this._action = new BattleInitGeneralShowAction();
+			this._action.setProxyed(this);
+		}
+		
+		public function dispose():void
+		{
+			this._userList = null;
+			this._enemyList = null;
+			if (this._queue != null)
+			{
+				this._queue.dispose();
+			}
+			if (this._action != null)
+			{
+				this._action.dispose();
+			}
+		}
+		
+		/* INTERFACE shipDock.interfaces.IQueueExecuter */
+		
+		public function commit():void
+		{
+			
+			this._parallel = new ParallelEffect();
+			this.setBattleGeneralShow(BattleOwner.USER_VALUE);
+			this.setBattleGeneralShow(BattleOwner.ENEMY_VALUE);
+			this._queue.add(_parallel);
+			this._queue.add(this.showComplete);
+			//this._queue.commit();
+			
+			this._action.sendNotice(new GameQueueAssetProxyNotice(QueueLoaderProxyCommand.ADD_ASSET_TO_QUEUE_COMMAND, GameLoadID.LOAD_ID_BATTLE_INIT_GENERAL_SHOW, "battleCard", FileAssetQueueLoader, [null]));
+			this._action.startLoadBattleGeneralAsset();
+		}
+		
+		/**
+		 * 执行此对象所在队列的下一个队列元素
+		 *
+		 */
+		public function queueNext():void
+		{
+			this.dispatchEventWith(QueueExecuterEvent.QUEUE_UNIT_NEXT_EVENT);
+		}
+		
+		public function batttleGeneralAssetListLoaded():void
+		{
+			this._queue.commit();
+		}
+		
+		private function setBattleGeneralShow(battleOwner:int):void
+		{
+			
+			var isUserOwner:Boolean = (battleOwner == BattleOwner.USER_VALUE);
+			var list:Array = (isUserOwner) ? this._userList : this._enemyList;
+			
+			var index:int;
+			var point:Point;
+			var initPoint:Point;
+			var general:GeneralModel;
+			var battleGeneral:BattleGeneral;
+			
+			var animate:AnimatableEffect;
+			for each (general in list)
+			{
+				if (general != null)
+				{
+					index = list.indexOf(general);
+					point = BattleSetting.getBattleGeneralSite(index, isUserOwner);
+					var notice:BattleViewNotice = new BattleViewNotice(BattleViewCommand.GET_BATTLE_POS_BY_GRID_COMMAND, {"row": point.y, "column": point.x});
+					point = NoticeManager.sendNotice(notice);
+					
+					var initX:Number = (isUserOwner) ? (point.x - 100) : (SDConfig.stageWidth + 100);
+					initPoint = new Point(initX, point.y);
+					battleGeneral = NoticeManager.sendNotice(new CreateBattleGeneralNotice(general, initPoint, battleOwner));
+					
+					animate = new AnimatableEffect(battleGeneral, 0.3, {"x": point.x});
+					this._parallel.effectList.push(animate);
+				}
+			}
+		}
+		
+		private function showComplete():void
+		{
+			this.queueNext();
+		}
+		
+		public function get queueSize():uint {
+			return 1;
+		}
+		
+		public function get eventDispatcher():EventDispatcher {
+			return this as EventDispatcher;
+		}
+	
+	}
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:2c8062842a429421a9156d8ef5800fe6$ -->
+<TextureAtlas imagePath="pvp.png">
+    <SubTexture name="btn0_pvpBonus" x="897" y="1174" width="118" height="41"/>
+    <SubTexture name="btn0_pvpBuyItem" x="657" y="903" width="268" height="74" frameX="0" frameY="0" frameWidth="272" frameHeight="74"/>
+    <SubTexture name="btn0_pvpChange" x="800" y="1135" width="130" height="37"/>
+    <SubTexture name="btn0_pvpFight" x="657" y="1056" width="141" height="85"/>
+    <SubTexture name="btn0_pvpShop" x="657" y="1186" width="118" height="41"/>
+    <SubTexture name="btn0_pvpShopRefresh" x="893" y="1217" width="114" height="31"/>
+    <SubTexture name="btn1_pvpBonus" x="777" y="1174" width="118" height="41"/>
+    <SubTexture name="btn1_pvpBuyItem" x="657" y="827" width="268" height="74" frameX="0" frameY="0" frameWidth="272" frameHeight="74"/>
+    <SubTexture name="btn1_pvpChange" x="800" y="1096" width="130" height="37"/>
+    <SubTexture name="btn1_pvpFight" x="855" y="979" width="141" height="85"/>
+    <SubTexture name="btn1_pvpShop" x="657" y="1143" width="118" height="41"/>
+    <SubTexture name="btn1_pvpShopRefresh" x="777" y="1217" width="114" height="31"/>
+    <SubTexture name="pvpBg" x="2" y="2" width="960" height="640"/>
+    <SubTexture name="pvpBonusBg" x="2" y="1190" width="606" height="577" frameX="0" frameY="0" frameWidth="608" frameHeight="577"/>
+    <SubTexture name="pvpBrand" x="987" y="106" width="19" height="33"/>
+    <SubTexture name="pvpBrandBg" x="800" y="1066" width="141" height="28"/>
+    <SubTexture name="pvpCoin" x="964" y="38" width="34" height="30"/>
+    <SubTexture name="pvpDash" x="1006" y="145" width="16" height="4"/>
+    <SubTexture name="pvpDrink" x="1008" y="106" width="14" height="37"/>
+    <SubTexture name="pvpGold" x="964" y="2" width="48" height="34"/>
+    <SubTexture name="pvpItemBg" x="2" y="1769" width="558" height="90"/>
+    <SubTexture name="pvpNum0" x="964" y="170" width="19" height="32" frameX="-4" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum1" x="987" y="70" width="11" height="30" frameX="-8" frameY="-3" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum2" x="964" y="204" width="19" height="30" frameX="-3" frameY="-3" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum3" x="964" y="104" width="21" height="30" frameX="-1" frameY="-3" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum4" x="1000" y="72" width="21" height="32" frameX="-2" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum5" x="985" y="141" width="19" height="32" frameX="-2" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum6" x="964" y="70" width="21" height="32" frameX="-1" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum7" x="985" y="175" width="19" height="30" frameX="-3" frameY="-3" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum8" x="964" y="136" width="19" height="32" frameX="-3" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpNum9" x="1000" y="38" width="21" height="32" frameX="-1" frameY="-1" frameWidth="25" frameHeight="36"/>
+    <SubTexture name="pvpRankBg1" x="927" y="876" width="93" height="45" frameX="-2" frameY="-4" frameWidth="105" frameHeight="49"/>
+    <SubTexture name="pvpRankBg2" x="927" y="827" width="94" height="47" frameX="-2" frameY="-8" frameWidth="106" frameHeight="55"/>
+    <SubTexture name="pvpRankBg3" x="610" y="1229" width="97" height="47" frameX="-2" frameY="-4" frameWidth="109" frameHeight="57"/>
+    <SubTexture name="pvpRankItemBg" x="657" y="644" width="305" height="82"/>
+    <SubTexture name="pvpShopBg" x="2" y="644" width="653" height="544"/>
+    <SubTexture name="pvpShopItemBg" x="657" y="979" width="196" height="75"/>
+    <SubTexture name="pvpShopSellout" x="657" y="728" width="284" height="97"/>
+</TextureAtlas>

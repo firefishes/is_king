@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fe62a41fd719d146b5ecc72a1f3984d3$ -->
+<TextureAtlas imagePath="itemRender.png">
+    <SubTexture name="itemRender" x="2" y="2" width="300" height="40"/>
+</TextureAtlas>

@@ -1,0 +1,17 @@
+一、项目目录说明
+client/ 
+	前端源码
+eframework/ 
+	as3原生框架
+server/ 
+	后端源码
+tag/ 
+	备份
+isKingPlan/ 
+	策划文档
+接口数据结构/  
+	前后端数据接口说明
+美术/
+	美术素材资源、源文件
+configs/
+	配置文件、源文件

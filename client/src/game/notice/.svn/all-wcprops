@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/is_king/!svn/ver/276/client/src/game/notice
+END
+PlatFormLoaderNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/is_king/!svn/ver/261/client/src/game/notice/PlatFormLoaderNotice.as
+END
+AddBattleCardToViewNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/is_king/!svn/ver/191/client/src/game/notice/AddBattleCardToViewNotice.as
+END
+SyncFileNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/is_king/!svn/ver/15/client/src/game/notice/SyncFileNotice.as
+END
+GameVersionNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/260/client/src/game/notice/GameVersionNotice.as
+END
+AddBattleWordNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/is_king/!svn/ver/187/client/src/game/notice/AddBattleWordNotice.as
+END
+GameQueueAssetProxyNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/is_king/!svn/ver/276/client/src/game/notice/GameQueueAssetProxyNotice.as
+END
+NoticeName.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/is_king/!svn/ver/265/client/src/game/notice/NoticeName.as
+END
+BattleGeneralPositionsNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/is_king/!svn/ver/190/client/src/game/notice/BattleGeneralPositionsNotice.as
+END
+BattleAINotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/275/client/src/game/notice/BattleAINotice.as
+END
+BattleDataSubjectNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/is_king/!svn/ver/259/client/src/game/notice/BattleDataSubjectNotice.as
+END
+BattlePropertyFillNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/is_king/!svn/ver/265/client/src/game/notice/BattlePropertyFillNotice.as
+END
+GetBattleCardsNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/is_king/!svn/ver/190/client/src/game/notice/GetBattleCardsNotice.as
+END
+BattlePropertyChangedNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/is_king/!svn/ver/265/client/src/game/notice/BattlePropertyChangedNotice.as
+END
+BattleFightNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/is_king/!svn/ver/265/client/src/game/notice/BattleFightNotice.as
+END
+CreateBattleGeneralNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/is_king/!svn/ver/265/client/src/game/notice/CreateBattleGeneralNotice.as
+END
+GameInitNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/is_king/!svn/ver/261/client/src/game/notice/GameInitNotice.as
+END
+LoadBattleAssetsNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/is_king/!svn/ver/265/client/src/game/notice/LoadBattleAssetsNotice.as
+END
+InitBattleNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/265/client/src/game/notice/InitBattleNotice.as
+END
+BattleCardDataNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/is_king/!svn/ver/190/client/src/game/notice/BattleCardDataNotice.as
+END
+BattleOptionPannelNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/is_king/!svn/ver/275/client/src/game/notice/BattleOptionPannelNotice.as
+END
+BattleDataNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/275/client/src/game/notice/BattleDataNotice.as
+END
+BattleCardNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/190/client/src/game/notice/BattleCardNotice.as
+END
+BattleViewNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/is_king/!svn/ver/275/client/src/game/notice/BattleViewNotice.as
+END
+ChooseServerNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/is_king/!svn/ver/261/client/src/game/notice/ChooseServerNotice.as
+END
+GetBattleGeneralNotice.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/is_king/!svn/ver/190/client/src/game/notice/GetBattleGeneralNotice.as
+END

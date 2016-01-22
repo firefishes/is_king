@@ -1,0 +1,20 @@
+package game.notice 
+{
+	import shipDock.notice.HTTPNotice;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class SyncFileNotice extends HTTPNotice 
+	{
+		
+		public function SyncFileNotice(doSuccess:Function=null, doFail:Function=null, token:IHTTPToken=null, isUseDefaultFail:Boolean=true, dataFormat:String=null, requestMethod:String="POST") 
+		{
+			super(method, params, doSuccess, doFail, token, isUseDefaultFail, dataFormat, requestMethod);
+			
+		}
+		
+	}
+
+}

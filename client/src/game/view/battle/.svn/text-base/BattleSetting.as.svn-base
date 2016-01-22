@@ -1,0 +1,76 @@
+package game.view.battle
+{
+	import flash.geom.Point;
+	import game.utils.GeneralSiteName;
+	
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class BattleSetting
+	{
+		
+		public static const BATTLE_FRAME_RATE:int = 60;//战斗帧频
+		
+		public static const ROW_MAX:int = 5;//战场单元格行数
+		public static const COLUMN_MAX:int = 10;//战场单元格列数
+		
+		public static const DAY_NIGHT_CHANGE_TIME_SECS:Number = 60; //变天周期的秒数
+		
+		public static const ANGER_INIT:int = 0; //怒气初始值
+		public static const MORALE_INIT:int = 50; //士气初始值
+		public static const INTELLIGENCE_INIT:int = 50; //情报初始值
+		
+		public static const INTELLIGENCE_CHANGED:int = 10; //情报初始改变值
+		
+		public static const ANGER_CYCLE_INIT:int = 200; //士气变化周期初始值
+		public static const MORALE_CYCLE_INIT:int = 200; //士气变化周期初始值
+		public static const INTELLIGENCE_CYCLE_INIT:int = 20; //情报变化周期初始值
+		
+		public static const MORALE_MAX:int = 100; //士气最大值
+		public static const BATTLE_CARD_MAX:int = 7;
+		
+		public static var gridLayerOffsetPoint:Point;//战场单元格坐标修正坐标
+		
+		private static var battleGeneralSite:Object;//战场单元格表示的将领战阵位置配置
+		
+		private static var isInitUserSite:Boolean;//玩家将领战争位置是否初始化
+		private static var isInitEnemySite:Boolean;//对方将领战争位置是否初始化
+		
+		public static function getBattleGeneralSite(battleSiteName:int, isUser:Boolean = true):Point
+		{
+			var flagName:String = (isUser) ? "U" : "E";
+			
+			if (battleGeneralSite == null)
+			{
+				battleGeneralSite = {};
+				initBattleGeneralSite("U", true);
+				initBattleGeneralSite("E", false);
+			}
+			return battleGeneralSite[battleSiteName + "_" + flagName];
+		}
+		
+		private static function initBattleGeneralSite(flagName:String, isUser:Boolean):void {
+			var backColumn:int = (isUser) ? 0 : COLUMN_MAX - 1; //前排
+			//var frontColumn:int = (isUser) ? 1 : COLUMN_MAX - 1;//后排
+			var frontColumn:int = backColumn;
+			
+			battleGeneralSite[GeneralSiteName.COACH + "_" + flagName] = new Point(backColumn, 2);
+			battleGeneralSite[GeneralSiteName.ADVISER + "_" + flagName] = new Point(backColumn, 2);
+			battleGeneralSite[GeneralSiteName.L_PIONEER + "_" + flagName] = new Point(frontColumn, 1);
+			battleGeneralSite[GeneralSiteName.R_PIONEER + "_" + flagName] = new Point(frontColumn, 3);
+			battleGeneralSite[GeneralSiteName.L_WING + "_" + flagName] = new Point(frontColumn, 0);
+			battleGeneralSite[GeneralSiteName.R_WING + "_" + flagName] = new Point(frontColumn, 4);
+			battleGeneralSite[GeneralSiteName.UNIT_TRAIN + "_" + flagName] = new Point(backColumn, 1);
+			battleGeneralSite[GeneralSiteName.REINFORCEMENTS + "_" + flagName] = new Point(backColumn, 3);
+			
+		}
+		
+		public function BattleSetting()
+		{
+		
+		}
+	
+	}
+
+}

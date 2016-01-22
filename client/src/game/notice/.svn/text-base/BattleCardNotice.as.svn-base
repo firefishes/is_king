@@ -1,0 +1,20 @@
+package game.notice 
+{
+	/**
+	 * ...
+	 * @author shaoxin.ji
+	 */
+	public class BattleCardNotice extends BattleViewNotice 
+	{
+		
+		public static const BATTLE_CARD_ICON_READY_NOTICE:String = "battleCardIconShowReadyNotice";
+		
+		public function BattleCardNotice(subCommand:String, data:*=null) 
+		{
+			super(subCommand, data);
+			
+		}
+		
+	}
+
+}
