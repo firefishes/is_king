@@ -119,7 +119,7 @@ package game.ui
 		
 		private function startReadyEffect():void {
 			var skillAlphaEffect:AnimatableEffect = new AnimatableEffect(this.skillIcon, 0.2, {"scaleX":0.5, "scaleY":0.5, "alpha":1} );
-			var skillMoveEffect:AnimatableEffect = new AnimatableEffect(this, 0.2, {"x":this.targetPos.x, "y":this.targetPos.y} );
+			var skillMoveEffect:AnimatableEffect = new AnimatableEffect(this, 0.2, {"x":this.targetPos.x, "y":this.targetPos.y, "delay":0.5} );
 			var roleAlphaEffect:AnimatableEffect = new AnimatableEffect(this.role, 0.3, {"alpha":1} );
 			var list:Array = [skillAlphaEffect, skillMoveEffect, roleAlphaEffect];
 			var effect:QueueEffect = new QueueEffect(list);
@@ -171,7 +171,7 @@ package game.ui
 			var point:Point = new Point(cardX, cardY);
 			point = this.localToGlobal(point);
 			battleCard.x = point.x;// - battleCard.width / 4 * SDConfig.globalScale;
-			battleCard.y = point.y - (battleCard.height / 2 + this.height * 2) * SDConfig.globalScale;;
+			battleCard.y = point.y - (battleCard.height + this.height * 2) * SDConfig.globalScale;;
 		}
 		
 		private function get battleCardModel():BattleCardModel {

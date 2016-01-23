@@ -49,9 +49,8 @@ package game.ui
 		}
 		
 		private function setCard():void {
-			if (this.skillModel == null || this.generalModel == null) {
+			if (this.skillModel == null || this.generalModel == null)
 				return;
-			}
 			var assetManager:SDAssetManager = SDAssetManager.getInstance();
 			var bg:SDImage = assetManager.getImage("battleCardBg" + this.skillModel.quality, false, true);
 			var role:SDImage = assetManager.getImage(this.generalModel.middelImageID, false, true); 
@@ -62,9 +61,7 @@ package game.ui
 			role.scaleY = 0.7;
 			role.alpha = 0.5;
 			
-			if (this._cardContainer == null) {
-				this._cardContainer = new SDSprite();
-			}
+			(this._cardContainer == null) && (this._cardContainer = new SDSprite());
 			this.addChildToContainer(bg, "cardBgArea", this._cardContainer);
 			this.addChildToContainer(role, "roleArea", this._cardContainer);
 			this.addChildToContainer(skillIcon, "skillIconArea", this._cardContainer);

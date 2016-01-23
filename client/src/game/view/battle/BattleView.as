@@ -251,7 +251,7 @@ package game.view.battle
 			
 			var battleWords:BattleWords = new BattleWords(dataNotice.wordText, dataNotice.genralModel);
 			battleWords.x = battleGeneral.x + battleGeneral.width / 2 * SDConfig.globalScale;
-			battleWords.y = battleGeneral.y - battleGeneral.height;// / 2 * SDConfig.globalScale;
+			battleWords.y = battleGeneral.y - battleGeneral.height * 2;// / 2 * SDConfig.globalScale;
 			this.addChild(battleWords);
 		}
 		
@@ -265,8 +265,8 @@ package game.view.battle
 				var battleCardIcon:BattleCardIcon = new BattleCardIcon();
 				battleCardIcon.data = {"battleCardModel":dataNotice.battleCardModel, "targetPos":targetPos, "ownerType":dataNotice.ownerType };
 				var battleGeneral:BattleGeneral = battleWordsMap.getValue(generalModel, true) as BattleGeneral;
-				battleCardIcon.x = battleGeneral.x;
-				battleCardIcon.y = battleGeneral.y;
+				battleCardIcon.x = battleGeneral.x - battleGeneral.width / 2;
+				battleCardIcon.y = battleGeneral.y - battleGeneral.height / 2;
 				this.addChild(battleCardIcon);
 				
 				battleCardIcon.dispatchEvent(new BattleCardEvent(BattleCardEvent.BATTLE_CARD_ICON_READY_EVENT, battleCardIcon));

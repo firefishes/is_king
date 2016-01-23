@@ -4,7 +4,6 @@ package game.action
 	import game.command.BattleOptionPannelCommand;
 	import game.notice.BattleCardDataNotice;
 	import game.notice.BattleOptionPannelNotice;
-	import game.ui.BattleCardIcon;
 	import game.view.battle.BattleSetting;
 	import shipDock.framework.core.action.Action;
 	
