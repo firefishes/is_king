@@ -114,7 +114,6 @@ package game.view.battle
 		private function createView():void {
 			
 			var battleLayer:SDSprite = this.getEmptySpriteUI("gridLayer");
-			BattleSetting.gridLayerOffsetPoint = new Point(battleLayer.x, battleLayer.y);
 			this._battleGridLayer = new BattleGridLayer(battleLayer.x, battleLayer.y, 5, 12, 936, 435);
 			
 			var battleOpen:BattleOpen = new BattleOpen();

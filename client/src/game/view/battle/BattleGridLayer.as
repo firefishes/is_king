@@ -20,6 +20,7 @@ package game.view.battle
 		
 		public function BattleGridLayer(x:Number, y:Number, row:int, colum:int, w:Number, h:Number) 
 		{
+			BattleSetting.gridLayerOffsetPoint = new Point(x, y);
 			this._width = w;
 			this._height = h;
 			this._row = row;
@@ -55,6 +56,26 @@ package game.view.battle
 		public function get gridHeight():Number 
 		{
 			return _gridHeight;
+		}
+		
+		public function get x():Number 
+		{
+			return _x;
+		}
+		
+		public function get y():Number 
+		{
+			return _y;
+		}
+		
+		public function get row():int 
+		{
+			return _row;
+		}
+		
+		public function get column():int 
+		{
+			return _column;
 		}
 		
 	}
