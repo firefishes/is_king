@@ -30,7 +30,7 @@ package
 			this._skinClass = Skin;
 		}
 		
-		override protected function initActoinClass():void 
+		override protected function initActionClass():void 
 		{
 			this._actionClass = MapEditerAction;
 		}

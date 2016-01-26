@@ -1,0 +1,13 @@
+{
+	"air_app":{
+		"id":"isKingMapEditer",
+		"skin_class":"",
+		"skin_swf":"",
+		"so_name":"isKingMapEditer"
+	},
+	"default_save_path":"shipDockToolExport/[id]/export",
+	"default_browser_path":"shipDockToolExport/[id]/source",
+	"scrips":{
+		"rl":"reloadConfigCommand"
+	}
+}
