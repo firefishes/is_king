@@ -4,6 +4,7 @@ package
 	import assets.mapEditer.Skin;
 	import flash.display.Sprite;
 	import flash.text.TextField;
+	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
 	
 	/**
@@ -45,9 +46,12 @@ package
 			
 			var mapLayer:Sprite = this.getMovieClip("mapLayer");
 			var list:Array = this.mapEditerAction.setEditerGrids(mapLayer.x, mapLayer.y);
-			var i:int = 0, max:int = list.length, tile:MapTile;
+			var mapEditerGrid:MapEditerGrid = this.mapEditerAction.mapEditerGrids;
+			var i:int = 0, max:int = mapEditerGrid.row * mapEditerGrid.column, tile:MapTile, r:int, c:int;
 			while (i < max) {
-				tile = list[i][i % this.mapEditerAction.mapEditerGrids.row];
+				r = int(i / this.mapEditerAction.mapEditerGrids.column);
+				c = i % this.mapEditerAction.mapEditerGrids.row;
+				tile = list[c][r];
 				mapLayer.addChild(tile);
 				i++;
 			}
