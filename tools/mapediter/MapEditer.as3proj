@@ -12,12 +12,14 @@
     <movie minorVersion="0" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="AIR 17.0.0;17.0.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
     <class path="..\..\..\shipDock\tools\shipDockAIR" />
     <class path="..\..\..\shipDock\src" />
+    <class path="..\..\client\src\game\view\battle" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -54,7 +56,7 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <!-- example: <element path="..." /> -->
+    <element path="libs\mapEditerSkin.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -1,5 +1,6 @@
 package 
 {
+	import assets.mapEditer.Skin;
 	import flash.display.Sprite;
 	import flash.text.TextField;
 	
@@ -22,7 +23,7 @@ package
 		
 		override protected function initSkinClass():void 
 		{
-			this._skinClass = Sprite;
+			this._skinClass = Skin;
 		}
 		
 		override protected function setLogText():void 
