@@ -45,14 +45,16 @@ package
 			super.createUI();
 			
 			var mapLayer:Sprite = this.getMovieClip("mapLayer");
-			var list:Array = this.mapEditerAction.setEditerGrids(mapLayer.x, mapLayer.y);
+			var list:Array = this.mapEditerAction.setEditerGrids(0, 0);
 			var mapEditerGrid:MapEditerGrid = this.mapEditerAction.mapEditerGrids;
-			var i:int = 0, max:int = mapEditerGrid.row * mapEditerGrid.column, tile:MapTile, r:int, c:int;
+			var i:int = 0, max:int = mapEditerGrid.gridSize, tile:MapTile, r:int, c:int;
 			while (i < max) {
 				r = int(i / this.mapEditerAction.mapEditerGrids.column);
 				c = i % this.mapEditerAction.mapEditerGrids.row;
-				tile = list[c][r];
-				mapLayer.addChild(tile);
+				if(list[r]) {
+					tile = list[r][c];
+					mapLayer.addChild(tile);
+				}
 				i++;
 			}
 		}

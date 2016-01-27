@@ -15,6 +15,10 @@ package mapEditer
 			
 		}
 		
+		public function get gridSize():int {
+			return this.column;// this.row * this.column;
+		}
+		
 	}
 
 }
