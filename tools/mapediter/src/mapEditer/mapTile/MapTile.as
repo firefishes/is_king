@@ -15,10 +15,13 @@ package mapEditer.mapTile
 		{
 			super();
 			
-			this.graphics.beginFill(0, 0.8);
-			this.graphics.drawRect(0, 0, w, h);
-			this.graphics.endFill();
-			
+			var isTest:Boolean;
+			if(isTest) {
+				this.graphics.lineStyle(1);
+				this.graphics.beginFill(0, 0.8);
+				this.graphics.drawRect(0, 0, w, h);
+				this.graphics.endFill();
+			}
 		}
 		
 	}

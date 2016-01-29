@@ -1,4 +1,4 @@
-package 
+package
 {
 	import action.MapEditerAction;
 	import assets.mapEditer.Skin;
@@ -11,11 +11,10 @@ package
 	 * ...
 	 * @author ch.ji
 	 */
-	public class Main extends AIRApplication 
+	public class Main extends AIRApplication
 	{
 		
-		
-		public function Main():void 
+		public function Main():void
 		{
 			super();
 		}
@@ -25,39 +24,49 @@ package
 			this._soName = "isKingMapEditer";
 		}
 		
-		override protected function initSkinClass():void 
+		override protected function initSkinClass():void
 		{
 			this._skinClass = Skin;
 		}
 		
-		override protected function initActionClass():void 
+		override protected function initActionClass():void
 		{
 			this._actionClass = MapEditerAction;
 		}
 		
-		override protected function setLogText():void 
+		override protected function setLogText():void
 		{
 			this._infoText = this.infoText;
 		}
 		
-		override protected function createUI():void 
+		override protected function createUI():void
 		{
 			super.createUI();
 			
+			this.stage.stageWidth = 960;
+			this.stage.stageHeight = 640;
+			
 			var mapLayer:Sprite = this.getMovieClip("mapLayer");
-			var list:Array = this.mapEditerAction.setEditerGrids(mapLayer.x, mapLayer.y);
+			var list:Array = this.mapEditerAction.setEditerGrids(0, 0);
 			var mapEditerGrid:MapEditerGrid = this.mapEditerAction.mapEditerGrids;
-			var i:int = 0, max:int = mapEditerGrid.row * mapEditerGrid.column, tile:MapTile, r:int, c:int;
-			while (i < max) {
+			var i:int = 0, max:int = mapEditerGrid.gridSize, tile:MapTile, r:int, c:int;
+			while (i < max)
+			{
 				r = int(i / this.mapEditerAction.mapEditerGrids.column);
-				c = i % this.mapEditerAction.mapEditerGrids.row;
-				tile = list[c][r];
-				mapLayer.addChild(tile);
+				c = i % this.mapEditerAction.mapEditerGrids.column;
+				if (list[r])
+				{
+					tile = list[r][c];
+					mapLayer.addChild(tile);
+				}
 				i++;
 			}
+			this.shipDockAIRScriptUp();
+			this.mapEditerAction.applyNativeDrag(this);
 		}
 		
-		private function get infoText():TextField {
+		private function get infoText():TextField
+		{
 			return this.getTextField("infoText");
 		}
 		
@@ -66,9 +75,10 @@ package
 			return this.getTextField("cmdText");
 		}
 		
-		private function get mapEditerAction():MapEditerAction {
+		private function get mapEditerAction():MapEditerAction
+		{
 			return this._action as MapEditerAction;
 		}
 	}
-	
+
 }

@@ -25,7 +25,7 @@ package action
 			var point:Point, tile:MapTile, list:Array = [], i:int = 0, r:int = 0, c:int = 0;
 			var max:int = this._mapEditerGrids.row * this._mapEditerGrids.column;
 			while (i < max) {
-				if (c >= this._mapEditerGrids.column) {
+				if (c > this._mapEditerGrids.column - 1) {
 					result.push(list);
 					list = [];
 					c = 0;
