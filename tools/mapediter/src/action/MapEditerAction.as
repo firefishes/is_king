@@ -1,8 +1,10 @@
 package action
 {
+	import command.MapEditerStartUpCommand;
 	import flash.geom.Point;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
+	import notice.NoticeName;
 	
 	/**
 	 * ...
@@ -14,8 +16,15 @@ package action
 		
 		public function MapEditerAction()
 		{
-			super();
+			super(MapEditerStartUpCommand);
 		
+		}
+		
+		override protected function get preregisteredCommand():Array 
+		{
+			return super.preregisteredCommand.concat([
+				NoticeName.OPEN_MAP_FILE
+			]);
 		}
 		
 		public function setEditerGrids(x:Number, y:Number):Array
