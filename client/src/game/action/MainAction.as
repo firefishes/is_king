@@ -16,16 +16,7 @@ package game.action
 		
 		public function MainAction() 
 		{
-			super();
-		}
-		
-		override protected function setCommand():void 
-		{
-			super.setCommand();
-			
-			this.registered(SDNoticeName.SD_START_UP, IsKingStartUpCommand);
-			
-			this.startUp();
+			super(IsKingStartUpCommand);
 		}
 		
 		public function startView():void {

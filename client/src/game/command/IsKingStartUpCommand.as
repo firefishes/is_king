@@ -8,6 +8,7 @@ package game.command
 	import game.data.CampData;
 	import game.data.ProfileData;
 	import game.notice.NoticeName;
+	import shipDock.framework.core.command.SDStartUpCommand;
 	
 	import shipDock.framework.core.action.ActionController;
 	import shipDock.framework.core.command.Command;
@@ -24,57 +25,30 @@ package game.command
 	 * ...
 	 * @author ch.ji
 	 */
-	public class IsKingStartUpCommand extends Command 
+	public class IsKingStartUpCommand extends SDStartUpCommand 
 	{
 		
 		public function IsKingStartUpCommand() 
 		{
-			super(false);
+			super();
 			
 		}
 		
-		override public function execute(notice:INotice):* 
-		{
-			this.initCommands();
-			this.initProxies();
-			this.initActions();
-		}
-		
-		private function initCommands():void {
-			
-			var list:Array = [
-				NoticeName.BATTLE_VIEW, BattleViewCommand,
-				NoticeName.BATTLE_DATA, BattleDataCommand,
-				NoticeName.BATTLE_OPTION_PANNEL, BattleOptionPannelCommand,
-			];
-			
-			var i:int = 0, cls:Class, name:String;
-			var max:int = list.length;
-			var actionController:ActionController = ActionController.getInstance();
-			while (i < max) {
-				name = list[i];
-				cls = list[i + 1];
-				actionController.preregisteredCommand(name, cls);
-				i += 2;
-			}
-		}
-		
-		private function initProxies():void {
-			var notice:CoreNotice = new CoreNotice(CoreCommand.REGISTERED_PROXYIES_COMMAND, this.proxyList);
-			this.sendNotice(notice);
-		}
-		
-		private function initActions():void {
-			var notice:CoreNotice = new CoreNotice(CoreCommand.REGISTERED_ACTION_COMMAND, this.actionList);
-			this.sendNotice(notice);
-		}
-		
-		private function get proxyList():Array {
+		override protected function get proxyList():Array {
 			return [ProfileData, CampData, BattleData];
 		}
 		
-		private function get actionList():Array {
+		override protected function get actionList():Array {
 			return [BattleViewAction, BattleCardIconAction, BattleOptionPannelActoin, BattleAIAction];
+		}
+		
+		override protected function get commandList():Array 
+		{
+			return [
+				[NoticeName.BATTLE_VIEW, BattleViewCommand],
+				[NoticeName.BATTLE_DATA, BattleDataCommand],
+				[NoticeName.BATTLE_OPTION_PANNEL, BattleOptionPannelCommand],
+			];
 		}
 	}
 

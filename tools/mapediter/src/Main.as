@@ -1,11 +1,14 @@
 package
 {
 	import action.MapEditerAction;
+	import action.NativeDragParams;
 	import assets.mapEditer.Skin;
 	import flash.display.Sprite;
+	import flash.filesystem.File;
 	import flash.text.TextField;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
+	import notice.NoticeName;
 	
 	/**
 	 * ...
@@ -65,8 +68,39 @@ package
 			this.mapEditerAction.applyNativeDrag(this);
 		}
 		
-		private function get infoText():TextField
+		override public function nativeDragForBMP(result:NativeDragParams):void 
 		{
+			super.nativeDragForBMP(result);
+			var list:Array = result.clipboadData;
+			var i:int, max:int = list.length;
+			var file:File;
+			while (i < max) {
+				file = list[i];
+				file.url
+				i++;
+			}
+		}
+		
+		override public function nativeDragForFile(result:NativeDragParams):void 
+		{
+			super.nativeDragForFile(result);
+			var list:Array = result.clipboadData;
+			var i:int, max:int = list.length;
+			var file:File;
+			var isMapFile:Boolean;
+			while (i < max) {
+				file = list[i];
+				if (file.url.split(".")[1] == "ikmap") {//地图配置
+					file = list[max - 1];
+					isMapFile = true;
+					break;
+				}
+				i++;
+			}
+			(isMapFile) && this.mapEditerAction.sendNotice(NoticeName.OPEN_MAP_FILE, file);
+		}
+		
+		private function get infoText():TextField {
 			return this.getTextField("infoText");
 		}
 		
