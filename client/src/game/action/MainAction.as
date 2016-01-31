@@ -4,7 +4,6 @@ package game.action
 	import shipDock.framework.application.manager.ViewManager;
 	
 	import shipDock.framework.core.action.SDAction;
-	import shipDock.framework.core.command.UICommand;
 	import shipDock.framework.core.notice.SDNoticeName;
 	
 	/**

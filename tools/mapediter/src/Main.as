@@ -84,13 +84,16 @@ package
 		override public function nativeDragForFile(result:NativeDragParams):void 
 		{
 			super.nativeDragForFile(result);
-			var list:Array = result.clipboadData;
+			var list:Array = result.clipboadData, splits:Array, fname:String;
 			var i:int, max:int = list.length;
 			var file:File;
 			var isMapFile:Boolean;
 			while (i < max) {
 				file = list[i];
-				if (file.url.split(".")[1] == "ikmap") {//地图配置
+				splits = file.url.split("/");
+				fname = String(splits[splits.length - 1]);
+				splits = fname.split(".");
+				if (splits[1] == "ikmap") {//地图配置
 					file = list[max - 1];
 					isMapFile = true;
 					break;
