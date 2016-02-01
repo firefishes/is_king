@@ -8,6 +8,9 @@ package notice
 	{
 		
 		public static const OPEN_MAP_FILE:String = "openMapFile";
+		public static const MAP_DATA:String = "mapData";
+		
+		public static const MAP_DATA_UPDATE:String = "mapDataUpdate";
 		
 		public function NoticeName() 
 		{

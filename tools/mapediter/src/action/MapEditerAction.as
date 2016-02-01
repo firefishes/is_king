@@ -23,7 +23,8 @@ package action
 		override protected function get preregisteredCommand():Array 
 		{
 			return super.preregisteredCommand.concat([
-				NoticeName.OPEN_MAP_FILE
+				NoticeName.OPEN_MAP_FILE,
+				NoticeName.MAP_DATA
 			]);
 		}
 		

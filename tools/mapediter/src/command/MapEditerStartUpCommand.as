@@ -1,5 +1,6 @@
 package command 
 {
+	import data.MapData;
 	import notice.NoticeName;
 	import shipDock.framework.core.action.ActionController;
 	import shipDock.framework.core.command.Command;
@@ -22,8 +23,14 @@ package command
 		override protected function get commandList():Array 
 		{
 			return [
-				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand]
+				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand],
+				[NoticeName.MAP_DATA, MapDataCommand]
 			];
+		}
+		
+		override protected function get proxyList():Array 
+		{
+			return super.proxyList.concat([MapData]);
 		}
 		
 	}

@@ -2,6 +2,7 @@ package command
 {
 	import flash.events.Event;
 	import flash.filesystem.File;
+	import notice.NoticeName;
 	import shipDock.framework.application.loader.AssetType;
 	import shipDock.framework.application.manager.FileManager;
 	import shipDock.framework.core.command.Command;
@@ -20,20 +21,12 @@ package command
 			
 		}
 		
-		override public function execute(notice:INotice):* 
+		override public function execute(params:INotice):* 
 		{
 			var result:*;
-			var file:File = notice.data;
-			/*file.addEventListener(Event.COMPLETE, this.mapFileLoadComplete);
-			file.load();*/
+			var file:File = params.data;
 			var data:* = FileManager.getInstance().readFile(file, AssetType.TYPE_JSON);
-			var a:* = data;
-		}
-		
-		private function mapFileLoadComplete(event:Event):void {
-			/*var file:File = event.target as File;
-			FileManager.getInstance().readFile(file);
-			file.data;*/
+			this.sendNotice(NoticeName.MAP_DATA, data, MapDataCommand.SET_MAP_COMMAND);
 		}
 	}
 
