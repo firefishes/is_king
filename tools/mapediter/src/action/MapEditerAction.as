@@ -1,10 +1,12 @@
 package action
 {
 	import command.MapEditerStartUpCommand;
+	import data.MapData;
 	import flash.geom.Point;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
 	import notice.NoticeName;
+	import shipDock.framework.core.interfaces.INotice;
 	
 	/**
 	 * ...
@@ -17,7 +19,22 @@ package action
 		public function MapEditerAction()
 		{
 			super(MapEditerStartUpCommand);
+			
+		}
 		
+		override protected function setCommand():void 
+		{
+			super.setCommand();
+			
+			this.bindDataProxy(MapData.NAME);
+		}
+		
+		override public function notify(params:INotice):* 
+		{
+			var result:* = super.notify(params);
+			if (params.name == NoticeName.MAP_DATA_UPDATE) {
+				this
+			}
 		}
 		
 		override protected function get preregisteredCommand():Array 

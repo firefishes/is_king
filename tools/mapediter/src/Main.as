@@ -9,6 +9,7 @@ package
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
 	import notice.NoticeName;
+	import shipDock.framework.application.component.UIAgent;
 	
 	/**
 	 * ...
@@ -66,6 +67,8 @@ package
 			}
 			this.shipDockAIRScriptUp();
 			this.mapEditerAction.applyNativeDrag(this);
+			
+			this._agent.data["map"] = new UIAgent(mapLayer);
 		}
 		
 		override public function nativeDragForBMP(result:NativeDragParams):void 

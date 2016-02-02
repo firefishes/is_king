@@ -22,7 +22,7 @@ package model
 			this._data = data;
 		}
 		
-		public function getGridValue(row:int, column:int):void {
+		public function getGridValue(row:int, column:int):* {
 			return this.mapGrids[row][column];
 		}
 		
@@ -30,12 +30,16 @@ package model
 			return this._data;
 		}
 		
-		public function get mapGrids():Array {
-			return this._data["grids"];
+		public function get map():Object {
+			return this.mapData["map"];
 		}
 		
 		protected function get mapInfo():Object {
-			return this._data["m"];
+			return this.mapData["m"];
+		}
+		
+		public function get mapGrids():Array {
+			return this.map["gs"];
 		}
 		
 		public function get mapName():String {
