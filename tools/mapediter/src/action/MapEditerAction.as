@@ -25,15 +25,14 @@ package action
 		override protected function setCommand():void 
 		{
 			super.setCommand();
-			
-			//this.bindDataProxy(MapData.NAME);
 		}
 		
 		override protected function get preregisteredCommand():Array 
 		{
 			return super.preregisteredCommand.concat([
 				NoticeName.OPEN_MAP_FILE,
-				NoticeName.MAP_DATA
+				NoticeName.MAP_DATA,
+				NoticeName.OPEN_BMP_FILE,
 			]);
 		}
 		

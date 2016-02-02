@@ -29,6 +29,17 @@ package data
 			this.notify(new Notice(NoticeName.MAP_DATA_UPDATE, this._mapModel));
 		}
 		
+		public function addSymbol(name:String, path:String):void {
+			this._mapModel.mapSymbols[name] = path;
+		}
+		
+		public function getSymbolLibName():String {
+			return this._mapModel.mapName;
+		}
+		
+		public function getNewSymbolPath(name:String):String {
+			return this.getSymbolLibName() + "/" + name;
+		}
 	}
 
 }

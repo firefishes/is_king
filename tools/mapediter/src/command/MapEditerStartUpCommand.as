@@ -24,7 +24,8 @@ package command
 		{
 			return super.commandList.concat([
 				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand],
-				[NoticeName.MAP_DATA, MapDataCommand]
+				[NoticeName.OPEN_BMP_FILE, OpenBMPFileCommand],
+				[NoticeName.MAP_DATA, MapDataCommand],
 			]);
 		}
 		

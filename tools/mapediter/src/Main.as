@@ -3,6 +3,7 @@ package
 	import action.MapEditerAction;
 	import action.NativeDragParams;
 	import assets.mapEditer.Skin;
+	import command.OpenBMPFileCommand;
 	import flash.display.Sprite;
 	import flash.filesystem.File;
 	import flash.text.TextField;
@@ -10,6 +11,7 @@ package
 	import mapEditer.mapTile.MapTile;
 	import mapEditer.MapPannel;
 	import notice.NoticeName;
+	import notice.OpenBMPNotice;
 	import shipDock.framework.application.component.UIAgent;
 	
 	/**
@@ -73,23 +75,10 @@ package
 			this._agent.data["symbols"] = new MapPannel(this.getMovieClip("symbolLayer"));
 		}
 		
-		override public function nativeDragForBMP(result:NativeDragParams):void 
-		{
-			super.nativeDragForBMP(result);
-			var list:Array = result.clipboadData;
-			var i:int, max:int = list.length;
-			var file:File;
-			while (i < max) {
-				file = list[i];
-				file.url
-				i++;
-			}
-		}
-		
 		override public function nativeDragForFile(result:NativeDragParams):void 
 		{
 			super.nativeDragForFile(result);
-			var list:Array = result.clipboadData, splits:Array, fname:String;
+			var list:Array = result.clipboadData, splits:Array, fname:String, extension:String;
 			var i:int, max:int = list.length;
 			var file:File;
 			var isMapFile:Boolean;
@@ -98,7 +87,34 @@ package
 				splits = file.url.split("/");
 				fname = String(splits[splits.length - 1]);
 				splits = fname.split(".");
-				if (splits[1] == "ikmap") {//地图配置
+				extension = splits[1];
+				if (extension == "ikmap") {//地图配置
+					file = list[max - 1];
+					isMapFile = true;
+					break;
+				}else if (extension == "png") {
+					var openBMPNotice:OpenBMPNotice = new OpenBMPNotice(OpenBMPNotice.FOR_IMPORT_SYMBOL, fname, file);
+					this.mapEditerAction.sendNotice(openBMPNotice, null, OpenBMPFileCommand.IMPORT_FOR_SYMBOL_COMMAND);
+				}
+				i++;
+			}
+			(isMapFile) && this.mapEditerAction.sendNotice(NoticeName.OPEN_MAP_FILE, file);
+		}
+		
+		override public function nativeDragForBMP(result:NativeDragParams):void 
+		{
+			super.nativeDragForBMP(result);
+			var list:Array = result.clipboadData, splits:Array, fname:String, fpath:String;
+			var i:int, max:int = list.length;
+			var file:File;
+			var isMapFile:Boolean;
+			while (i < max) {
+				file = list[i];
+				splits = file.url.split("/");
+				fname = String(splits[splits.length - 1]);
+				fpath = (splits.slice(0, splits.lentgh - 1)).join("/");
+				splits = fname.split(".");
+				if (splits[1] == "png") {//地图配置
 					file = list[max - 1];
 					isMapFile = true;
 					break;
