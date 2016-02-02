@@ -22,10 +22,10 @@ package command
 		
 		override protected function get commandList():Array 
 		{
-			return [
+			return super.commandList.concat([
 				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand],
 				[NoticeName.MAP_DATA, MapDataCommand]
-			];
+			]);
 		}
 		
 		override protected function get proxyList():Array 

@@ -260,7 +260,7 @@ package game.view.battle
 			if (battleWordsMap != null) {
 				var skillModel:SkillModel = dataNotice.skillModel;
 				var generalModel:GeneralModel = skillModel.generalModel;
-				var targetPos:Point = this.battleViewAction.callProxyed(NoticeName.GET_BATTLE_CARD_TARGET_POS, dataNotice, true);
+				var targetPos:Point = this.battleViewAction.callProxyed(NoticeName.GET_BATTLE_CARD_TARGET_POS, dataNotice);
 				var battleCardIcon:BattleCardIcon = new BattleCardIcon();
 				battleCardIcon.data = {"battleCardModel":dataNotice.battleCardModel, "targetPos":targetPos, "ownerType":dataNotice.ownerType };
 				var battleGeneral:BattleGeneral = battleWordsMap.getValue(generalModel, true) as BattleGeneral;

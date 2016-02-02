@@ -46,6 +46,10 @@ package model
 			return this.mapInfo["n"];
 		}
 		
+		public function get mapSymbols():Object {
+			return this.mapData["symbols"];
+		}
+		
 	}
 
 }

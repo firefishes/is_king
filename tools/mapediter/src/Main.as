@@ -8,6 +8,7 @@ package
 	import flash.text.TextField;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
+	import mapEditer.MapPannel;
 	import notice.NoticeName;
 	import shipDock.framework.application.component.UIAgent;
 	
@@ -68,7 +69,8 @@ package
 			this.shipDockAIRScriptUp();
 			this.mapEditerAction.applyNativeDrag(this);
 			
-			this._agent.data["map"] = new UIAgent(mapLayer);
+			this._agent.data["map"] = new MapPannel(mapLayer);
+			this._agent.data["symbols"] = new MapPannel(this.getMovieClip("symbolLayer"));
 		}
 		
 		override public function nativeDragForBMP(result:NativeDragParams):void 

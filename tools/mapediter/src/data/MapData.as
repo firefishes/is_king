@@ -26,7 +26,7 @@ package data
 		public function setMap(data:Object):void {
 			this._mapModel.updateData(data);
 			
-			this.notify(new Notice(NoticeName.MAP_DATA_UPDATE, this._mapModel.mapData));
+			this.notify(new Notice(NoticeName.MAP_DATA_UPDATE, this._mapModel));
 		}
 		
 	}

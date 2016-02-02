@@ -35,20 +35,20 @@ package game.command
 		}
 		
 		override protected function get proxyList():Array {
-			return [ProfileData, CampData, BattleData];
+			return super.proxyList.concat([ProfileData, CampData, BattleData]);
 		}
 		
 		override protected function get actionList():Array {
-			return [BattleViewAction, BattleCardIconAction, BattleOptionPannelActoin, BattleAIAction];
+			return super.actionList.concat([BattleViewAction, BattleCardIconAction, BattleOptionPannelActoin, BattleAIAction]);
 		}
 		
 		override protected function get commandList():Array 
 		{
-			return [
+			return super.commandList.concat([
 				[NoticeName.BATTLE_VIEW, BattleViewCommand],
 				[NoticeName.BATTLE_DATA, BattleDataCommand],
 				[NoticeName.BATTLE_OPTION_PANNEL, BattleOptionPannelCommand],
-			];
+			]);
 		}
 	}
 

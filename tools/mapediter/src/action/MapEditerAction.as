@@ -26,15 +26,7 @@ package action
 		{
 			super.setCommand();
 			
-			this.bindDataProxy(MapData.NAME);
-		}
-		
-		override public function notify(params:INotice):* 
-		{
-			var result:* = super.notify(params);
-			if (params.name == NoticeName.MAP_DATA_UPDATE) {
-				this
-			}
+			//this.bindDataProxy(MapData.NAME);
 		}
 		
 		override protected function get preregisteredCommand():Array 
