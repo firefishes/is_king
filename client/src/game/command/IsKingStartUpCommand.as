@@ -48,6 +48,7 @@ package game.command
 				[NoticeName.BATTLE_VIEW, BattleViewCommand],
 				[NoticeName.BATTLE_DATA, BattleDataCommand],
 				[NoticeName.BATTLE_OPTION_PANNEL, BattleOptionPannelCommand],
+				[NoticeName.BATTLE_ELEMENTS, BattleElementsCommand],
 			]);
 		}
 	}

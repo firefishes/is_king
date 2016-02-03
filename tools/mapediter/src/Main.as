@@ -12,6 +12,7 @@ package
 	import mapEditer.MapPannel;
 	import notice.NoticeName;
 	import notice.OpenBMPNotice;
+	import notice.OpenBMPType;
 	import shipDock.framework.application.component.UIAgent;
 	
 	/**
@@ -93,7 +94,7 @@ package
 					isMapFile = true;
 					break;
 				}else if (extension == "png") {
-					var openBMPNotice:OpenBMPNotice = new OpenBMPNotice(OpenBMPNotice.FOR_IMPORT_SYMBOL, fname, file);
+					var openBMPNotice:OpenBMPNotice = new OpenBMPNotice(OpenBMPType.FOR_IMPORT_SYMBOL, fname, file);
 					this.mapEditerAction.sendNotice(openBMPNotice, null, OpenBMPFileCommand.IMPORT_FOR_SYMBOL_COMMAND);
 				}
 				i++;

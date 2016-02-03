@@ -12,6 +12,7 @@ package game.notice {
 		public static const BATTLE_AI:String = "battleAI";
 		public static const BATTLE_INIT_GENERAL_SHOW:String = "battleInitGeneralShow";
 		public static const BATTLE_ASSETS:String = "battleAssets";
+		public static const BATTLE_ELEMENTS:String = "battleElements";
 		
 		public static const RUN_TIC:String = "runTic";
 		public static const STOP_TIC:String = "stopTic";

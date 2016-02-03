@@ -16,7 +16,7 @@ package game.ui
 	 * ...
 	 * @author ...
 	 */
-	public class BattleGeneral extends SDComponent 
+	public class BattleGeneral extends BattleElement 
 	{
 		
 		private var _battleOwner:int;

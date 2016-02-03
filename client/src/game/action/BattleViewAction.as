@@ -52,6 +52,7 @@ package game.action
 			return super.preregisteredCommand.concat([
 				NoticeName.BATTLE_VIEW,
 				NoticeName.BATTLE_DATA,
+				NoticeName.BATTLE_ELEMENTS,
 			]);
 		}
 		

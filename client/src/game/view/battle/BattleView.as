@@ -105,10 +105,10 @@ package game.view.battle
 			this._viewChildQueue.add(this.createViewEnd);
 			this._viewChildQueue.start();
 			
-			var troop:Object = ConfigManager.getInstance().getConfig("troop");
+			/*var troop:Object = ConfigManager.getInstance().getConfig("troop");
 			for (var k:* in troop) {
 				trace(troop[k]["atk"]);
-			}
+			}*/
 		}
 		
 		private function createView():void {

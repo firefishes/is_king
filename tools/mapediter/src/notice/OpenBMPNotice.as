@@ -10,7 +10,6 @@ package notice
 	 */
 	public class OpenBMPNotice extends Notice 
 	{
-		public static const FOR_IMPORT_SYMBOL:int = 0;
 		
 		public function OpenBMPNotice(forWhat:int, fileName:String, file:File = null, observer:IObserver=null, autoDispose:Boolean=true) 
 		{
