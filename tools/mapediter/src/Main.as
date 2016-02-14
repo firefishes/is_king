@@ -14,6 +14,7 @@ package
 	import notice.OpenBMPNotice;
 	import notice.OpenBMPType;
 	import shipDock.framework.application.component.UIAgent;
+	import ui.AIRButton;
 	
 	/**
 	 * ...
@@ -54,6 +55,25 @@ package
 			this.stage.stageWidth = 960;
 			this.stage.stageHeight = 640;
 			
+			this.shipDockAIRScriptUp();
+			this.mapEditerAction.applyNativeDrag(this);
+			
+			this._agent.data["openBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "打开");
+			this._agent.data["symbolBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "元件库");
+			this._agent.data["bgBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "背景");
+			
+			this.setGridsLayer();
+			this.setSymbolsLayer();
+		}
+		
+		private function setSymbolsLayer():void {
+			
+			
+			this._agent.data["symbols"] = new MapPannel(this.getMovieClip("symbolLayer"));
+		}
+		
+		private function setGridsLayer():void {
+			
 			var mapLayer:Sprite = this.getMovieClip("mapLayer");
 			var list:Array = this.mapEditerAction.setEditerGrids(0, 0);
 			var mapEditerGrid:MapEditerGrid = this.mapEditerAction.mapEditerGrids;
@@ -69,11 +89,8 @@ package
 				}
 				i++;
 			}
-			this.shipDockAIRScriptUp();
-			this.mapEditerAction.applyNativeDrag(this);
 			
 			this._agent.data["map"] = new MapPannel(mapLayer);
-			this._agent.data["symbols"] = new MapPannel(this.getMovieClip("symbolLayer"));
 		}
 		
 		override public function nativeDragForFile(result:NativeDragParams):void 
@@ -96,29 +113,6 @@ package
 				}else if (extension == "png") {
 					var openBMPNotice:OpenBMPNotice = new OpenBMPNotice(OpenBMPType.FOR_IMPORT_SYMBOL, fname, file);
 					this.mapEditerAction.sendNotice(openBMPNotice, null, OpenBMPFileCommand.IMPORT_FOR_SYMBOL_COMMAND);
-				}
-				i++;
-			}
-			(isMapFile) && this.mapEditerAction.sendNotice(NoticeName.OPEN_MAP_FILE, file);
-		}
-		
-		override public function nativeDragForBMP(result:NativeDragParams):void 
-		{
-			super.nativeDragForBMP(result);
-			var list:Array = result.clipboadData, splits:Array, fname:String, fpath:String;
-			var i:int, max:int = list.length;
-			var file:File;
-			var isMapFile:Boolean;
-			while (i < max) {
-				file = list[i];
-				splits = file.url.split("/");
-				fname = String(splits[splits.length - 1]);
-				fpath = (splits.slice(0, splits.lentgh - 1)).join("/");
-				splits = fname.split(".");
-				if (splits[1] == "png") {//地图配置
-					file = list[max - 1];
-					isMapFile = true;
-					break;
 				}
 				i++;
 			}

@@ -5,6 +5,7 @@ package action
 	import flash.geom.Point;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
+	import notice.EditerOptionChangeNotice;
 	import notice.NoticeName;
 	import shipDock.framework.core.interfaces.INotice;
 	
@@ -15,25 +16,28 @@ package action
 	public class MapEditerAction extends AIRMainAction
 	{
 		private var _mapEditerGrids:MapEditerGrid;
+		private var _currentOptions:int = MapEditerOption.NORMAL;
 		
 		public function MapEditerAction()
 		{
 			super(MapEditerStartUpCommand);
-			
+		
 		}
 		
-		override protected function setCommand():void 
-		{
-			super.setCommand();
-		}
-		
-		override protected function get preregisteredCommand():Array 
+		override protected function get preregisteredCommand():Array
 		{
 			return super.preregisteredCommand.concat([
-				NoticeName.OPEN_MAP_FILE,
-				NoticeName.MAP_DATA,
+				NoticeName.MAP_EDITER,
+				NoticeName.OPEN_MAP_FILE, 
+				NoticeName.MAP_DATA, 
 				NoticeName.OPEN_BMP_FILE,
 			]);
+		}
+		
+		public function changeOptions(value:int):void {
+			this._currentOptions = value;
+			var msg:EditerOptionChangeNotice = new EditerOptionChangeNotice(this._currentOptions);
+			this.sendNotice(msg);
 		}
 		
 		public function setEditerGrids(x:Number, y:Number):Array
@@ -42,8 +46,10 @@ package action
 			this._mapEditerGrids = new MapEditerGrid(x, y, 5, 12, 936, 435);
 			var point:Point, tile:MapTile, list:Array = [], i:int = 0, r:int = 0, c:int = 0;
 			var max:int = this._mapEditerGrids.row * this._mapEditerGrids.column;
-			while (i < max) {
-				if (c > this._mapEditerGrids.column - 1) {
+			while (i < max)
+			{
+				if (c > this._mapEditerGrids.column - 1)
+				{
 					result.push(list);
 					list = [];
 					c = 0;
@@ -61,7 +67,7 @@ package action
 			return result;
 		}
 		
-		public function get mapEditerGrids():MapEditerGrid 
+		public function get mapEditerGrids():MapEditerGrid
 		{
 			return _mapEditerGrids;
 		}

@@ -6,7 +6,7 @@ package game.model
 	 * 游戏数据模型基类
 	 * 
 	 * ...
-	 * @author shaoxin.ji
+	 * @author ch.ji
 	 */
 	public class GameModel extends DataModel 
 	{
@@ -21,6 +21,12 @@ package game.model
 		{
 			this.id = id;
 			super();
+		}
+		
+		override public function dispose():void 
+		{
+			super.dispose();
+			this._modelData = null;
 		}
 		
 		protected function setQuality(value:int):void {

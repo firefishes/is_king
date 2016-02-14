@@ -1,4 +1,4 @@
-package game.command 
+package game.command
 {
 	import game.data.BattleData;
 	import game.data.CampData;
@@ -23,7 +23,7 @@ package game.command
 	 * ...
 	 * @author ...
 	 */
-	public class BattleDataCommand extends Command 
+	public class BattleDataCommand extends Command
 	{
 		
 		public static const INIT_BATTLE_COMMAND:String = "initBattleCommand";
@@ -41,84 +41,96 @@ package game.command
 		
 		private var _battleData:BattleData;
 		
-		public function BattleDataCommand() 
+		public function BattleDataCommand()
 		{
 			super();
 		}
 		
-		override public function dispose():void 
+		override public function dispose():void
 		{
 			super.dispose();
 			this._battleData = null;
 		}
 		
-		public function initBattleCommand(notice:InitBattleNotice):void {
+		public function initBattleCommand(notice:InitBattleNotice):void
+		{
 			this.battleData.battleModel.stageModel = new StageModel(notice.battleID);
 			this.battleData.battleModel.isPVE = notice.isPVE;
-			if (notice.isPVE) {//关卡推图
+			if (notice.isPVE)
+			{ //关卡推图
 				var campData:CampData = DataProxy.getDataProxy(CampData.CAMP_DATA);
 				var user:Array = campData.atkCamp;
 				this.battleData.initGenerals(user);
-			}else {//TODO 人与人斗，其乐无穷
+			}
+			else
+			{ //TODO 人与人斗，其乐无穷
 				
 			}
 		}
 		
-		public function startBattleCommand(notice:INotice):void {
+		public function startBattleCommand(notice:INotice):void
+		{
 			this.battleData.startBattleData();
 		}
 		
-		public function getBattleDataCommand(notice:INotice):BattleData {
+		public function getBattleDataCommand(notice:INotice):BattleData
+		{
 			return this.battleData;
 		}
 		
-		public function getGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel {
+		public function getGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel
+		{
 			var key:String = BattleOwner.OWNER_KEYS[notice.ownerType];
 			return this.battleData[key + "GeneralList"];
 		}
 		
-		public function getCurrentGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel {
+		public function getCurrentGeneralListCommand(notice:BattleGeneralPositionsNotice):PositionsModel
+		{
 			var key:String = BattleOwner.OWNER_KEYS[notice.ownerType];
 			return this.battleData[key + "CurrentGeneral"];
 		}
 		
-		public function updateBattleDataOnFrameCommand(notice:INotice):void {
+		public function updateBattleDataOnFrameCommand(notice:INotice):void
+		{
 			this.battleData.updateDataOnFrame(notice.data);
 		}
 		
-		public function battlePropertyFillMaxCommand(notice:BattlePropertyFillNotice):void {
-			if (notice.isIntelligence && notice.isFillMax) {
+		public function battlePropertyFillMaxCommand(notice:BattlePropertyFillNotice):void
+		{
+			(notice.isIntelligence && notice.isFillMax) && 
 				this.battleData.intelligenceFillMax(notice.ownerType);
-			}
 		}
 		
-		public function getBattleGeneralCommand(notice:GetBattleGeneralNotice):PositionsModel {
+		public function getBattleGeneralCommand(notice:GetBattleGeneralNotice):PositionsModel
+		{
 			var key:String = BattleOwner.OWNER_KEYS[notice.owner];
-			if (notice.getType == GetBattleGeneralType.ALL) {
+			if (notice.getType == GetBattleGeneralType.ALL)
 				key = key + "GeneralList";
-			}else if(notice.getType == GetBattleGeneralType.CURRENT) {
+			else if (notice.getType == GetBattleGeneralType.CURRENT)
 				key = key + "CurrentGeneral";
-			}//TODO 获取阵亡将领列表
+			//TODO 获取阵亡将领列表
 			var result:PositionsModel = this.battleData[key];
 			return result;
 		}
 		
-		public function addBattleCardCommand(notice:BattleCardDataNotice):void {
+		public function addBattleCardCommand(notice:BattleCardDataNotice):void
+		{
 			this.battleData.addBattleCard(notice);
 		}
 		
-		public function getBattleCardsCommand(notice:GetBattleCardsNotice):BattleCardModel {
+		public function getBattleCardsCommand(notice:GetBattleCardsNotice):BattleCardModel
+		{
 			return this.battleData.getBattleCardByIndex(notice);
 		}
 		
-		public function getBattleCardsCountCommand(notice:BattleCardDataNotice):uint {
+		public function getBattleCardsCountCommand(notice:BattleCardDataNotice):uint
+		{
 			return this.battleData.getBattleCardCount(notice);
 		}
 		
-		private function get battleData():BattleData {
-			if (this._battleData == null) {
-				this._battleData = DataProxy.getDataProxy(BattleData.BATTLE_DATA);
-			}
+		private function get battleData():BattleData
+		{
+			(!this._battleData) && (this._battleData = DataProxy.getDataProxy(BattleData.BATTLE_DATA));
 			return this._battleData;
 		}
 	}

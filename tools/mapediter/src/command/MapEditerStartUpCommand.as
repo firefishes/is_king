@@ -26,6 +26,7 @@ package command
 				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand],
 				[NoticeName.OPEN_BMP_FILE, OpenBMPFileCommand],
 				[NoticeName.MAP_DATA, MapDataCommand],
+				[NoticeName.MAP_EDITER, MapEditerCommand],
 			]);
 		}
 		

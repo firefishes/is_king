@@ -11,6 +11,8 @@ package game.model
 		public static const SKILL_CONFIG:String = "skill";
 		public static const GENERAL_SKILL_RELATION_CONFIG:String = "general_skill_relation";
 		
+		public static const BATTLE_STAGE_CONFIG:String = "battle_stage";
+		
 		public function ConfigName() 
 		{
 			

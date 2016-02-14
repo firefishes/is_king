@@ -93,7 +93,7 @@ package game.action
 		}
 		
 		public function sendBattleRequest():void {
-			this.sendNotice(new BattleFightNotice("b001", true));//发送战斗的服务端请求
+			this.sendNotice(new BattleFightNotice("510001", true));//发送战斗的服务端请求
 		}
 		
 		public function runBattleTics():void {
