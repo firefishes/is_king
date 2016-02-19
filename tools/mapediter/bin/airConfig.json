@@ -7,7 +7,8 @@
 	},
 	"default_save_path":"shipDockToolExport/[id]/export",
 	"default_browser_path":"shipDockToolExport/[id]/source",
-	"scrips":{
-		"rl":"reloadConfigCommand"
+	"scripts":{
+		"rl":"reloadConfigCommand",
+		"create_map":"createMapCommand",
 	}
 }

@@ -2,6 +2,7 @@ package action
 {
 	import command.MapEditerStartUpCommand;
 	import data.MapData;
+	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
@@ -32,6 +33,22 @@ package action
 				NoticeName.MAP_DATA, 
 				NoticeName.OPEN_BMP_FILE,
 			]);
+		}
+		
+		public function newButtonHandler(event:MouseEvent):void {
+			this.sendNotice(NoticeName.NEW_MAP_FILE);
+		}
+		
+		public function saveButtonHandler(event:MouseEvent):void {
+			
+		}
+		
+		public function symbolButtonHandler(event:MouseEvent):void {
+			
+		}
+		
+		public function bgButtonHandler(event:MouseEvent):void {
+			
 		}
 		
 		public function changeOptions(value:int):void {

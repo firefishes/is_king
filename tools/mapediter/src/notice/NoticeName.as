@@ -7,6 +7,7 @@ package notice
 	public class NoticeName 
 	{
 		
+		public static const NEW_MAP_FILE:String = "newMapFile";
 		public static const OPEN_MAP_FILE:String = "openMapFile";
 		public static const MAP_DATA:String = "mapData";
 		public static const OPEN_BMP_FILE:String = "openBMPFile";

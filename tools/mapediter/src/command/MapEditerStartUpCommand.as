@@ -23,6 +23,7 @@ package command
 		override protected function get commandList():Array 
 		{
 			return super.commandList.concat([
+				[NoticeName.NEW_MAP_FILE, NewMapCommand],
 				[NoticeName.OPEN_MAP_FILE, OpenMapFileCommand],
 				[NoticeName.OPEN_BMP_FILE, OpenBMPFileCommand],
 				[NoticeName.MAP_DATA, MapDataCommand],

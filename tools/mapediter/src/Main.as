@@ -10,6 +10,7 @@ package
 	import mapEditer.MapEditerGrid;
 	import mapEditer.mapTile.MapTile;
 	import mapEditer.MapPannel;
+	import mapEditer.SymbolsPannel;
 	import notice.NoticeName;
 	import notice.OpenBMPNotice;
 	import notice.OpenBMPType;
@@ -58,18 +59,17 @@ package
 			this.shipDockAIRScriptUp();
 			this.mapEditerAction.applyNativeDrag(this);
 			
-			this._agent.data["openBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "打开");
-			this._agent.data["symbolBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "元件库");
-			this._agent.data["bgBtn"] = new AIRButton(this.getMovieClip("openBtn"), null, "背景");
+			this._agent.data["newBtn"] = new AIRButton(this.getMovieClip("newBtn"), this.mapEditerAction.newButtonHandler, "新建");
+			this._agent.data["saveBtn"] = new AIRButton(this.getMovieClip("saveBtn"), this.mapEditerAction.saveButtonHandler, "保存");
+			this._agent.data["symbolBtn"] = new AIRButton(this.getMovieClip("symbolBtn"), this.mapEditerAction.symbolButtonHandler, "元件库");
+			this._agent.data["bgBtn"] = new AIRButton(this.getMovieClip("bgBtn"), this.mapEditerAction.bgButtonHandler, "背景");
 			
 			this.setGridsLayer();
 			this.setSymbolsLayer();
 		}
 		
 		private function setSymbolsLayer():void {
-			
-			
-			this._agent.data["symbols"] = new MapPannel(this.getMovieClip("symbolLayer"));
+			this._agent.data["symbols"] = new SymbolsPannel(this.getMovieClip("symbolLayer"));
 		}
 		
 		private function setGridsLayer():void {
@@ -131,6 +131,14 @@ package
 		private function get mapEditerAction():MapEditerAction
 		{
 			return this._action as MapEditerAction;
+		}
+		
+		private function get symbolsPannel():SymbolsPannel {
+			return this._agent.data["symbols"];
+		}
+		
+		private function get mapPannel():MapPannel {
+			return this._agent.data["map"];
 		}
 	}
 
