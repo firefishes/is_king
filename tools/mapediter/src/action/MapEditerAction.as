@@ -1,6 +1,7 @@
 package action
 {
 	import command.MapEditerStartUpCommand;
+	import command.NewMapCommand;
 	import data.MapData;
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
@@ -29,6 +30,7 @@ package action
 		{
 			return super.preregisteredCommand.concat([
 				NoticeName.MAP_EDITER,
+				NoticeName.NEW_MAP_FILE,
 				NoticeName.OPEN_MAP_FILE, 
 				NoticeName.MAP_DATA, 
 				NoticeName.OPEN_BMP_FILE,
@@ -36,7 +38,7 @@ package action
 		}
 		
 		public function newButtonHandler(event:MouseEvent):void {
-			this.sendNotice(NoticeName.NEW_MAP_FILE);
+			this.sendNotice(NoticeName.NEW_MAP_FILE, null, NewMapCommand.POPUP_CREATE_PANNEL_COMMAND);
 		}
 		
 		public function saveButtonHandler(event:MouseEvent):void {

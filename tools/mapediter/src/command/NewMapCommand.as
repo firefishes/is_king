@@ -10,17 +10,18 @@ package command
 	public class NewMapCommand extends Command 
 	{
 		
+		public static const POPUP_CREATE_PANNEL_COMMAND:String = "popupCreatePannelCommand";
+		public static const CREATE_NEW_MAP_COMMAND:String = "createNewMapCommand";
+		
 		public function NewMapCommand(isAutoExecute:Boolean=true) 
 		{
 			super(isAutoExecute);
 			
 		}
 		
-		override public function execute(notice:INotice):* 
+		public function createNewMapCommand(notice:INotice):void 
 		{
-			var result:* = super.execute(notice);
-			
-			return result;
+			trace(notice.data);
 		}
 	}
 

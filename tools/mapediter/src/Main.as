@@ -49,6 +49,11 @@ package
 			this._infoText = this.infoText;
 		}
 		
+		override protected function getScriptContent():String 
+		{
+			return this.cmdText.text;
+		}
+		
 		override protected function createUI():void
 		{
 			super.createUI();
