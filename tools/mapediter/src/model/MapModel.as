@@ -22,6 +22,15 @@ package model
 			this._data = data;
 		}
 		
+		public function setMapInfo(name:String, cnName:String, cellColumn:uint, cellRow:uint, bgImagePath:String):void {
+			var info:Object = this.mapInfo;
+			info["n"] = name;//"n":"demo"
+			info["cn"] = cnName;//"cn":"示例",
+			info["cw"] = cellColumn;//"cw":12,
+			info["ch"] = cellRow;//"ch":6,
+			info["bg"] = bgImagePath;//"bg":""
+		}
+		
 		public function getGridValue(row:int, column:int):* {
 			return this.mapGrids[row][column];
 		}

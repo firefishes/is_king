@@ -23,6 +23,10 @@ package data
 			this._mapModel = new MapModel();
 		}
 		
+		public function setMapInfo(name:String, cnName:String, cellColumn:uint, cellRow:uint, bgImagePath:String):void {
+			this._mapModel.setMapInfo(name, cnName, cellColumn, cellRow, bgImagePath);
+		}
+		
 		public function setMap(data:Object):void {
 			this._mapModel.updateData(data);
 			

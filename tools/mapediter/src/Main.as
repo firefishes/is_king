@@ -15,6 +15,7 @@ package
 	import notice.OpenBMPNotice;
 	import notice.OpenBMPType;
 	import shipDock.framework.application.component.UIAgent;
+	import shipDock.framework.core.notice.InvokeProxyedNotice;
 	import ui.AIRButton;
 	
 	/**
@@ -51,7 +52,9 @@ package
 		
 		override protected function getScriptContent():String 
 		{
-			return this.cmdText.text;
+			var result:String = this.cmdText.text;
+			this.cmdText.text = this.cmdText.text.substr(0, this.cmdText.text.length - 1);
+			return result;
 		}
 		
 		override protected function createUI():void
@@ -122,6 +125,18 @@ package
 				i++;
 			}
 			(isMapFile) && this.mapEditerAction.sendNotice(NoticeName.OPEN_MAP_FILE, file);
+		}
+		
+		override public function showTextContent(message:InvokeProxyedNotice):void 
+		{
+			super.showTextContent(message);
+			this.infoText.text = message.data;
+		}
+		
+		override public function cleanSDAIRScript(message:InvokeProxyedNotice):void 
+		{
+			super.cleanSDAIRScript(message);
+			this.cmdText.text = "";
 		}
 		
 		private function get infoText():TextField {

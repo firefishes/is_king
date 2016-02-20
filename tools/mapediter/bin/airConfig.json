@@ -9,6 +9,6 @@
 	"default_browser_path":"shipDockToolExport/[id]/source",
 	"scripts":{
 		"rl":"reloadConfigCommand",
-		"create_map":{"notice":"newMapFile", "subCommand":"createNewMapCommand", "args":null}
+		"create_map":{"notice":"newMapFile", "subCommand":"createNewMapCommand", "args":null, "help":{"length":5, "decs":"-mapName='' -cnName='' -cellColumn=5 -cellRow=12 -bgImagePath='default.png'"}}
 	}
 }

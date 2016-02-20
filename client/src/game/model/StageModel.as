@@ -36,6 +36,7 @@ package game.model
 			super.updateData(data);
 			var list:Array = data["enemy_ids"];
 			var id:String, i:int, max:int = list.length;
+			this._enemyList = [];
 			while (i < max)
 			{
 				id = list[i];
